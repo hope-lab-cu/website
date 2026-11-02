@@ -1,0 +1,14 @@
+HOPE LAB DESIGN OPTIONS — GITHUB PAGES UPLOAD
+
+1. Extract the ZIP file.
+2. Upload the complete `design-options-8` folder into your website repository (the same way as the example folder you showed).
+3. Commit directly to the `main` branch.
+4. Keep GitHub Pages publishing from the repository root (`/(root)`) on `main`.
+5. After deployment, open your existing GitHub Pages site and add `/design-options-8/` to the end of its URL.
+   Example: https://YOUR-ACCOUNT.github.io/YOUR-REPOSITORY/design-options-8/
+6. The gallery page will show all eight concepts. Open any card to enter that full six-page website.
+
+IMPORTANT:
+- Uploading this folder as a subfolder does not replace the repository's main homepage.
+- If you want the gallery to appear at the bare site URL (without `/design-options-8/`), the gallery's `index.html` and `gallery.css` must instead be uploaded to the publishing root. That can replace an existing root `index.html`, so do not do that unless you intend to change the main homepage.
+- No need to change the GitHub Pages source if your current site already publishes from `main` and `/(root)`.

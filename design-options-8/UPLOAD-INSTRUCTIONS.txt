@@ -1,0 +1,11 @@
+UPLOAD INSTRUCTIONS
+
+1. Extract this ZIP.
+2. Open the extracted folder and locate the inner folder named design-options-8.
+3. In GitHub, choose Add file > Upload files.
+4. Drag ONLY the inner design-options-8 folder into the upload area.
+5. Before committing, check paths begin exactly with /design-options-8/ (not an extra parent folder).
+6. Commit directly to main with message: Add eight distinct HOPE Lab design systems
+7. Do not replace or delete any existing website files.
+
+Gallery: https://hope-lab-cu.github.io/website/design-options-8/

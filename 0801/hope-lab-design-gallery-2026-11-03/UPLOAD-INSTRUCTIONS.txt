@@ -1,0 +1,9 @@
+HOPE LAB — EIGHT ORIGINAL DESIGNS
+
+1. Extract this ZIP file.
+2. Upload the complete folder named `hope-lab-eight-original-designs` into your GitHub website repository.
+3. Select “Commit directly to the main branch” and commit.
+4. After GitHub Pages deploys, open: /hope-lab-eight-original-designs/
+5. Choose any of the eight design cards. Each opens a complete six-page site.
+
+Do not upload only the index.html file. Keep the eight concept folders, gallery.css, .nojekyll, README.md, and this instruction file together.

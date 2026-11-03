@@ -1,0 +1,69 @@
+HOW TO MAKE THIS THE MAIN HOPE LAB WEBSITE
+==========================================
+
+Repository: https://github.com/hope-lab-cu/website
+Main URL:   https://hope-lab-cu.github.io/website/
+
+IMPORTANT: This is a ROOT-DEPLOYMENT package, not a preview subfolder.
+It is intended to update the website at the main URL.
+
+RECOMMENDED METHOD — GITHUB DESKTOP
+-----------------------------------
+1. Download this ZIP and extract it.
+2. Make a backup of your current local repository folder. Alternatively,
+   create a separate Git branch before making the changes.
+3. Open your local clone of hope-lab-cu/website in GitHub Desktop.
+4. Copy the five HTML files from the extracted package into the repository
+   root, overwriting the existing files with the same names:
+      index.html
+      research.html
+      publications.html
+      people.html
+      contact.html
+5. MERGE the supplied assets folder with your existing assets folder.
+   Overwrite these matching files:
+      assets/css/style.css
+      assets/js/site.js
+      assets/images/hope-logo.webp
+   Add this new image:
+      assets/images/home-science.webp
+   Keep any other existing images or files in your assets folder; do not
+   delete unrelated files.
+6. Review the changes in GitHub Desktop. The updated files should be the
+   five HTML pages and the listed assets (plus README/UPLOAD instructions
+   only if you choose to keep those in the repository).
+7. Use the commit message: Update HOPE Lab main website.
+8. Click Commit to main, then Push origin.
+9. Wait for GitHub Pages to deploy, then open:
+   https://hope-lab-cu.github.io/website/
+10. Test all five navigation links, the Get in touch button, the publication
+    search, the hero image, and the mobile menu.
+
+GITHUB WEBSITE UPLOAD METHOD
+----------------------------
+1. Open https://github.com/hope-lab-cu/website.
+2. Upload the five HTML files to the repository root and replace the existing
+   files with those names.
+3. Upload/replace the specified CSS, JavaScript and logo files at their exact
+   assets/ paths. Upload home-science.webp to assets/images/.
+4. Keep existing unrelated asset files and old design-preview folders.
+5. Commit directly to main.
+
+DO NOT
+-----
+- Do not upload this package inside a new subfolder if you want it at the main URL.
+- Do not replace the repository or rename it.
+- Do not change the GitHub Pages source if it is already main / (root).
+- Do not delete the old preview folders until the new main site is deployed
+  and verified.
+
+URL NOTE
+--------
+Because the repository is named “website”, its GitHub Pages project URL is
+https://hope-lab-cu.github.io/website/. A path such as /research without
+/website/ would require a custom domain or a different repository setup.
+You do not need to rename the repository to make the current main URL work.
+
+CHECK BEFORE PUBLICATION
+------------------------
+Please confirm the office hours on contact.html are current before publishing.

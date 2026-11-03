@@ -1,0 +1,41 @@
+UPLOAD INSTRUCTIONS — DESIGN COLLECTION 02 (COMPACT)
+
+WHY THIS VERSION
+The earlier package contained 156 files. GitHub's browser upload allows up to 100 files per upload. This rebuilt package contains fewer than 100 files, while keeping all eight designs and all five pages per design.
+
+1. Download HOPE-Lab-Design-Collection-02-upload-ready.zip.
+2. Extract it. The extracted folder is named design-options-round-3.
+3. Open https://github.com/hope-lab-cu/website
+4. Select Add file → Upload files.
+5. Drag the WHOLE extracted design-options-round-3 folder into the upload area. Do not drag the ZIP file.
+6. Check that all listed paths begin with /design-options-round-3/ and that the page shows fewer than 100 files.
+7. Enter commit message: Add HOPE Lab design collection 02 (upload-ready).
+8. Select Commit directly to the main branch.
+9. Click Commit changes.
+10. After GitHub Pages deployment finishes, open:
+    https://hope-lab-cu.github.io/website/design-options-round-3/
+
+EXPECTED STRUCTURE
+design-options-round-3/
+  index.html                    (gallery of all eight designs)
+  gallery.css
+  README.txt
+  UPLOAD-INSTRUCTIONS.txt
+  shared-assets/                (common illustrations/images stored once)
+  01-clinical-blueprint/        (assets + five HTML pages)
+  02-neon-culture/              (assets + five HTML pages)
+  03-earthbound-journal/        (assets + five HTML pages)
+  04-signal-noise/              (assets + five HTML pages)
+  05-specimen-atlas/            (assets + five HTML pages)
+  06-prism-laboratory/          (assets + five HTML pages)
+  07-civic-modernist/           (assets + five HTML pages)
+  08-bioluminescent-orbit/      (assets + five HTML pages)
+
+Each design folder has its own assets/hope-logo.webp, assets/site.js, assets/style.css, and assets/hero-art.svg. Shared illustrations are in ../shared-assets/ and are referenced using relative paths.
+
+IMPORTANT
+- Upload the extracted folder, not the .zip file.
+- Upload to the repository root, not inside another folder.
+- Do not replace the existing repository-root index.html.
+- GitHub Pages must already be enabled for the main branch and /(root).
+- If the browser still rejects the folder, check that the upload file count is below 100 and that the drag operation includes the folder contents.

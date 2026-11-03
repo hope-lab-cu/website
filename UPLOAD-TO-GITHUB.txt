@@ -1,0 +1,25 @@
+HOPE LAB — COASTAL CLARITY (UPDATED MAIN WEBSITE)
+
+This package keeps the existing Coastal Clarity design and changes only the four requested inner-page cover sections. Homepage and all other page content/styles are retained.
+
+TARGET URL: https://hope-lab-cu.github.io/website/
+
+PAGE COVER LAYOUT
+- Research: RESEARCH AT HOPE LAB label and research-specific image on the left; “What drives our research.” and its description on the right.
+- Publications & Preprints: RESEARCH OUTPUTS label and publication-specific image on the left; “Publications & preprints.” and the supplied description on the right. Existing publication counts remain below the image.
+- People: people-specific image and label on the left; page introduction on the right.
+- Contact: ecosystem image and contact label on the left; contact introduction on the right.
+- Mobile: label first, image next, then heading and description.
+
+BROWSER-ONLY CLEAN REPLACEMENT
+1. Open https://github.com/hope-lab-cu/website and select the main branch.
+2. Before changing anything, use Code > Download ZIP to save a backup.
+3. Remove old preview/design folders from the repository root (for example design-previews, design-options-6, design-options-8, design-options-round-3, hope-lab-eight-designs, and any other old design folders). Open each folder, use the folder menu > Delete directory, and commit the deletion to main.
+4. Remove old root website files and assets that are being replaced. Preserve .gitignore, .github configuration, CNAME (if a custom domain is configured), and any Pages configuration you intentionally use. Do not delete the repository.
+5. Extract this ZIP. Upload its contents (five HTML files and assets folder) using Add file > Upload files. Do not upload the ZIP itself or put files inside an extra folder.
+6. Commit directly to main.
+7. Settings > Pages should remain Deploy from a branch, main, /(root).
+8. Wait for deployment, then check https://hope-lab-cu.github.io/website/ and each page on desktop and mobile.
+
+IMPORTANT ABOUT CLEANING GITHUB
+Deleting old folders/files from the main branch removes them from the published website after the next Pages deployment. It does not erase old commits from Git history or delete past deployment records in Actions. Those historical records do not appear on the live website. Do not delete the repository, branch, or Pages settings.

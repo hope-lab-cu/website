@@ -1,0 +1,16 @@
+HOPE LAB WEBSITE — COASTAL CLARITY REFRESH
+
+This package contains the complete website: all five HTML pages, the shared stylesheet, JavaScript, and image assets. It includes the homepage, header, footer, publication-link, and People-page updates requested in November 2026.
+
+RECOMMENDED: REPLACE THE COMPLETE WEBSITE
+1. Before changing anything, open the GitHub repository and use Code > Download ZIP to keep a backup of the current version.
+2. Extract this package on your computer.
+3. Open https://github.com/hope-lab-cu/website and choose Add file > Upload files.
+4. Upload the five HTML files (index.html, research.html, publications.html, people.html, contact.html) and the complete assets folder from the extracted package into the repository root. Do not upload the ZIP file itself or put the files inside an extra folder.
+5. Commit directly to the main branch. Keep GitHub Pages configured for main / (root).
+
+IMPORTANT
+- index.html must remain at the repository root.
+- Do not delete repository configuration files that are not included in this package (for example, CNAME, .gitignore, or .github files). If a CNAME file has been added by CU ICT, preserve it.
+- The trailing-slash redirect (https://cu.ac.bd/hope-lab to https://cu.ac.bd/hope-lab/) is configured on the CU server side, not by these website files.
+- If you prefer to update only selected files, replace the relevant HTML file(s) and assets/css/style.css together where styling changes are involved. The complete package is recommended so all pages share the same header and footer.

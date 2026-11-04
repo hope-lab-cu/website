@@ -585,3 +585,72 @@ a,button { -webkit-tap-highlight-color: transparent; }
   .people-pair .person-card { padding:7px 2px; }
   .publication-search { width:100%; }
 }
+
+
+/* Mobile readability fix: Discovery to Impact pathway stages */
+@media (max-width: 700px) {
+  .framework-pathway {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+  }
+  .pathway-stage,
+  .pathway-stage:first-child,
+  .pathway-stage:last-child {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 16px 14px;
+    border: 1px solid #d5e5eb;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 0 5px 16px rgba(24, 68, 88, .07);
+  }
+  .pathway-stage > div {
+    min-width: 0;
+  }
+  .pathway-code {
+    width: 42px;
+    min-width: 42px;
+    min-height: 39px;
+    align-self: start;
+    font-size: 1rem;
+    border-radius: 9px;
+  }
+  .pathway-stage h3 {
+    margin: 0 0 6px;
+    font-size: clamp(.98rem, 4vw, 1.08rem);
+    line-height: 1.32;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .pathway-stage p {
+    font-size: .88rem;
+    line-height: 1.62;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .pathway-stage,
+  .pathway-stage:first-child,
+  .pathway-stage:last-child {
+    grid-template-columns: 39px minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px 11px;
+  }
+  .pathway-code {
+    width: 38px;
+    min-width: 38px;
+    min-height: 36px;
+    font-size: .94rem;
+  }
+  .pathway-stage h3 { font-size: .96rem; }
+  .pathway-stage p { font-size: .84rem; }
+}

@@ -12,48 +12,106 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <style>
-    /* Local refinement for the three foundation cards on this page only. */
-    .foundation-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      align-items: stretch;
-      gap: 16px;
+
+  <style id="research-discovery-mobile-layout">
+    /* Research-page-only responsive layout for the four Discovery to Impact stages. */
+    @media (max-width: 760px) {
+      main .discovery-section {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        align-items: start !important;
+        gap: 22px !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        padding: 42px 18px !important;
+      }
+      main .discovery-copy,
+      main .framework-pathway {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+      }
+      main .framework-pathway {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-auto-flow: row !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+        overflow: visible !important;
+      }
+      main .framework-pathway .pathway-stage,
+      main .framework-pathway .pathway-stage:first-child,
+      main .framework-pathway .pathway-stage:last-child {
+        display: grid !important;
+        grid-template-columns: 48px minmax(0, 1fr) !important;
+        align-items: start !important;
+        gap: 12px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        min-height: 0 !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        padding: 16px 14px !important;
+        border: 1px solid #d4e4e9 !important;
+        border-radius: 13px !important;
+        background: #ffffff !important;
+        box-shadow: 0 5px 16px rgba(24, 68, 88, .08) !important;
+        white-space: normal !important;
+      }
+      main .framework-pathway .pathway-stage > div {
+        display: block !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+      }
+      main .framework-pathway .pathway-code {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+        min-height: 40px !important;
+        box-sizing: border-box !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+        font-size: 1rem !important;
+      }
+      main .framework-pathway .pathway-stage h3 {
+        margin: 0 0 6px !important;
+        max-width: 100% !important;
+        font-size: clamp(1rem, 4.2vw, 1.12rem) !important;
+        line-height: 1.32 !important;
+        overflow-wrap: anywhere !important;
+        word-break: normal !important;
+        white-space: normal !important;
+      }
+      main .framework-pathway .pathway-stage p {
+        margin: 0 !important;
+        max-width: 100% !important;
+        font-size: .9rem !important;
+        line-height: 1.6 !important;
+        overflow-wrap: anywhere !important;
+        white-space: normal !important;
+      }
     }
-    .foundation-card {
-      box-sizing: border-box;
-      min-width: 0;
-      min-height: 176px;
-      align-items: flex-end;
-      padding: clamp(18px, 2vw, 24px);
-      overflow: hidden;
-    }
-    .foundation-card > div {
-      width: 100%;
-      min-width: 0;
-    }
-    .foundation-card h3 {
-      max-width: 100%;
-      margin: 0 0 9px;
-      font-size: clamp(1.02rem, 1.25vw, 1.18rem);
-      line-height: 1.25;
-      white-space: normal;
-      overflow-wrap: break-word;
-      word-break: normal;
-      hyphens: auto;
-    }
-    .foundation-card p {
-      max-width: 100%;
-      font-size: .86rem;
-      line-height: 1.55;
-      overflow-wrap: break-word;
-    }
-    @media (max-width: 900px) {
-      .foundation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    }
-    @media (max-width: 620px) {
-      .foundation-grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
-      .foundation-card { min-height: 142px; padding: 20px; }
-      .foundation-card h3 { font-size: 1.15rem; }
+    @media (max-width: 380px) {
+      main .discovery-section { padding-inline: 14px !important; }
+      main .framework-pathway .pathway-stage,
+      main .framework-pathway .pathway-stage:first-child,
+      main .framework-pathway .pathway-stage:last-child {
+        grid-template-columns: 40px minmax(0, 1fr) !important;
+        gap: 10px !important;
+        padding: 14px 11px !important;
+      }
+      main .framework-pathway .pathway-code {
+        width: 38px !important;
+        min-width: 38px !important;
+        max-width: 38px !important;
+        min-height: 36px !important;
+      }
     }
   </style>
 </head>
@@ -85,7 +143,6 @@
     </div>
   </div>
 </section>
-<section class="section foundation-section"><div class="site-shell"><div class="foundation-grid"><article class="foundation-card"><div><h3>Microbial Biochemistry</h3><p>Organisms, metabolism, and functional biomolecules</p></div></article><article class="foundation-card"><div><h3>Molecular Functions</h3><p>Genomics, glycomics, metabolomics, and biological pathways</p></div></article><article class="foundation-card"><div><h3>Health and Environment</h3><p>One Health, microbial interactions, and environmental sustainability</p></div></article></div></div></section>
 <section class="section discovery-section" id="discovery-to-impact">
   <div class="discovery-copy">
     <p class="eyebrow">OUR RESEARCH FRAMEWORK</p>

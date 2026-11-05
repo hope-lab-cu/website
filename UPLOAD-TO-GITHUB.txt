@@ -1,16 +1,30 @@
-HOPE LAB WEBSITE — COASTAL CLARITY REFRESH
+HOPE LAB WEBSITE — COMPLETE UPDATED PACKAGE
 
-This package contains the complete website: all five HTML pages, the shared stylesheet, JavaScript, and image assets. It includes the homepage, header, footer, publication-link, and People-page updates requested in November 2026.
+This is a complete copy of the website based on the repository ZIP supplied for the 5 November 2026 update. Only the requested homepage publication-link placement and shared footer refinements have been changed.
 
-RECOMMENDED: REPLACE THE COMPLETE WEBSITE
-1. Before changing anything, open the GitHub repository and use Code > Download ZIP to keep a backup of the current version.
-2. Extract this package on your computer.
-3. Open https://github.com/hope-lab-cu/website and choose Add file > Upload files.
-4. Upload the five HTML files (index.html, research.html, publications.html, people.html, contact.html) and the complete assets folder from the extracted package into the repository root. Do not upload the ZIP file itself or put the files inside an extra folder.
-5. Commit directly to the main branch. Keep GitHub Pages configured for main / (root).
+WHAT CHANGED
+1. Homepage: “Explore publications” now appears immediately below the three selected publications, after The FEBS Journal.
+2. Footer on all five pages: slightly deeper background/text contrast and modestly larger text, while keeping the existing four-column layout. The Connect column now contains clearly labelled English and Bangla Google Sites links.
+
+HOW TO BACK UP YOUR CURRENT GITHUB WEBSITE FIRST
+1. Open https://github.com/hope-lab-cu/website
+2. Select the Code tab and make sure the branch is main.
+3. Click the green Code button, then select Download ZIP.
+4. Save this ZIP somewhere safe. Keep it unchanged as your backup.
+
+HOW TO UPLOAD THIS COMPLETE WEBSITE PACKAGE
+1. Extract this update ZIP on your computer.
+2. Open the extracted folder. You should see index.html, research.html, publications.html, people.html, contact.html, the assets folder, README.md, and this instruction file directly inside it.
+3. In another browser tab, open https://github.com/hope-lab-cu/website.
+4. Click Add file, then Upload files.
+5. From the extracted folder, select the five HTML files and the complete assets folder, and drag them into GitHub’s upload area. You can also use the file picker to select them. Upload the files/folder themselves, not the ZIP file.
+6. Check that the five HTML files are shown at the repository root, and that the assets folder is included. Do not put them inside another folder.
+7. In the commit section, keep “Commit directly to the main branch” selected, enter a message such as “Update homepage publication link and footer”, and click Commit changes.
+8. Do not delete the existing files before uploading. Matching files will be replaced by the new versions.
 
 IMPORTANT
 - index.html must remain at the repository root.
-- Do not delete repository configuration files that are not included in this package (for example, CNAME, .gitignore, or .github files). If a CNAME file has been added by CU ICT, preserve it.
-- The trailing-slash redirect (https://cu.ac.bd/hope-lab to https://cu.ac.bd/hope-lab/) is configured on the CU server side, not by these website files.
-- If you prefer to update only selected files, replace the relevant HTML file(s) and assets/css/style.css together where styling changes are involved. The complete package is recommended so all pages share the same header and footer.
+- Keep GitHub Pages configured to deploy from main / (root).
+- Do not delete or overwrite repository configuration files that are not in this package, such as CNAME, .gitignore, or .github. If CU ICT has added a CNAME file, preserve it.
+- The upload can update the GitHub Pages address before the CU address reflects the changes. Check both after the deployment has updated.
+- If GitHub displays an upload or commit error, do not repeatedly click Commit. Take a screenshot of the message and resolve that first.

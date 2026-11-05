@@ -797,3 +797,42 @@ a.publication-mark:hover { color: var(--accent); transform: translate(2px, -2px)
   .people-pairs .person-card p,
   .alumni-grid .person-card p { text-align: left; }
 }
+
+
+/* Footer refinement — slightly deeper contrast and more readable type,
+   while preserving the existing four-column organization. */
+.site-footer {
+  background: #f0f6f6;
+  border-top-color: #cbdedc;
+}
+.footer-identity p {
+  color: #536b74;
+  font-size: .84rem;
+}
+.footer-identity .footer-keywords {
+  color: #246b65;
+  font-size: .76rem;
+}
+.footer-col h2 {
+  color: #246b65;
+  font-size: .68rem;
+}
+.footer-col a {
+  color: #455f69;
+  font-size: .84rem;
+}
+.footer-col a:hover {
+  color: #1f6c64;
+}
+.footer-bottom {
+  border-top-color: #cbdedc;
+  color: #536b74;
+  font-size: .74rem;
+}
+
+/* Keep the moved publication link clearly attached to the selected papers. */
+.publications-more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}

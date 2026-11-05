@@ -11,6 +11,61 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* Alumni-only refinement: each former member appears as a distinct row. */
+    .alumni-section .alumni-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+    .alumni-section .alumni-grid .alumni-card {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      align-items: start;
+      column-gap: 15px;
+      width: 100%;
+      padding: 16px 7px;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+    .alumni-section .alumni-grid .alumni-card .person-marker {
+      grid-column: 1;
+      grid-row: 1;
+      margin-top: 2px;
+    }
+    .alumni-section .alumni-grid .alumni-card > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 5px;
+      min-width: 0;
+    }
+    .alumni-section .alumni-grid .alumni-card h3 {
+      margin: 0;
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+    .alumni-section .alumni-grid .alumni-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.5;
+      text-align: left;
+    }
+    @media (max-width: 560px) {
+      .alumni-section .alumni-grid .alumni-card {
+        grid-template-columns: 38px minmax(0, 1fr);
+        column-gap: 12px;
+        padding: 14px 2px;
+      }
+    }
+  </style>
 </head>
 <body data-design="coastal" data-page="people">
 <a class="skip-link" href="#main">Skip to content</a>

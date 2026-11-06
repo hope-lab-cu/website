@@ -28,6 +28,30 @@
     });
   }
 
+
+
+  // Discreet, expandable laboratory contact links on every page.
+  if (!document.querySelector('.floating-connect')) {
+    const connect = document.createElement('aside');
+    connect.className = 'floating-connect';
+    connect.innerHTML = `
+      <div class="floating-connect-panel" id="floating-connect-panel" aria-label="HOPE Lab social links">
+        <a href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer"><span class="social-mark social-linkedin" aria-hidden="true">in</span> LinkedIn</a>
+        <a href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer"><span class="social-mark social-facebook" aria-hidden="true">f</span> Facebook</a>
+        <a href="mailto:hopelab.science@gmail.com"><span class="social-mark social-email" aria-hidden="true">✉</span> Email</a>
+      </div>
+      <button class="floating-connect-toggle" type="button" aria-expanded="false" aria-controls="floating-connect-panel">Connect</button>`;
+    document.body.appendChild(connect);
+    const toggle = connect.querySelector('.floating-connect-toggle');
+    const close = () => { connect.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); };
+    toggle.addEventListener('click', () => {
+      const open = connect.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', (event) => { if (!connect.contains(event.target)) close(); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape') { close(); toggle.focus(); } });
+  }
+
   const year = document.querySelector('#current-year');
   if (year) year.textContent = String(new Date().getFullYear());
 

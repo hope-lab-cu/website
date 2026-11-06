@@ -1,30 +1,17 @@
-HOPE LAB WEBSITE — COMPLETE UPDATED PACKAGE
+HOPE LAB WEBSITE UPDATE — SOCIAL & ACADEMIC PROFILES
 
-This is a complete copy of the website based on the repository ZIP supplied for the 5 November 2026 update. Only the requested homepage publication-link placement and shared footer refinements have been changed.
+This update preserves the existing five pages and assets. Changes are limited to: (1) LinkedIn and Facebook links in the existing Connect footer on all five pages; (2) a small expandable Connect control on all pages; (3) PI academic-profile links and a Google Scholar metrics access panel beneath the PI description on people.html. The Alumni one-person-per-row layout is retained.
 
-WHAT CHANGED
-1. Homepage: “Explore publications” now appears immediately below the three selected publications, after The FEBS Journal.
-2. Footer on all five pages: slightly deeper background/text contrast and modestly larger text, while keeping the existing four-column layout. The Connect column now contains clearly labelled English and Bangla Google Sites links.
+UPLOAD (GitHub website in browser)
+1. Back up the repository: open https://github.com/hope-lab-cu/website, select Code, click the green Code button, then Download ZIP. Keep that backup.
+2. Download and extract this ZIP on your computer. Do not upload the ZIP itself.
+3. Open the repository and ensure the branch is main.
+4. Choose Add file > Upload files.
+5. Open the extracted folder, select all its contents (five HTML files and assets folder, plus README and this instruction file), and drag them into GitHub's upload area.
+6. Do not delete the existing repository files first. Matching files will be replaced when committed; unrelated repository configuration files remain. Preserve any CNAME, .gitignore or .github files already in the repository.
+7. Scroll down, enter a commit message such as “Add HOPE Lab social and PI academic profile links”, select Commit directly to main, and click Commit changes once.
+8. Keep Settings > Pages configured to deploy from main / (root).
+9. Check https://hope-lab-cu.github.io/website/ first, then https://cu.ac.bd/hope-lab/. If the old version remains temporarily, wait for deployment and refresh.
 
-HOW TO BACK UP YOUR CURRENT GITHUB WEBSITE FIRST
-1. Open https://github.com/hope-lab-cu/website
-2. Select the Code tab and make sure the branch is main.
-3. Click the green Code button, then select Download ZIP.
-4. Save this ZIP somewhere safe. Keep it unchanged as your backup.
-
-HOW TO UPLOAD THIS COMPLETE WEBSITE PACKAGE
-1. Extract this update ZIP on your computer.
-2. Open the extracted folder. You should see index.html, research.html, publications.html, people.html, contact.html, the assets folder, README.md, and this instruction file directly inside it.
-3. In another browser tab, open https://github.com/hope-lab-cu/website.
-4. Click Add file, then Upload files.
-5. From the extracted folder, select the five HTML files and the complete assets folder, and drag them into GitHub’s upload area. You can also use the file picker to select them. Upload the files/folder themselves, not the ZIP file.
-6. Check that the five HTML files are shown at the repository root, and that the assets folder is included. Do not put them inside another folder.
-7. In the commit section, keep “Commit directly to the main branch” selected, enter a message such as “Update homepage publication link and footer”, and click Commit changes.
-8. Do not delete the existing files before uploading. Matching files will be replaced by the new versions.
-
-IMPORTANT
-- index.html must remain at the repository root.
-- Keep GitHub Pages configured to deploy from main / (root).
-- Do not delete or overwrite repository configuration files that are not in this package, such as CNAME, .gitignore, or .github. If CU ICT has added a CNAME file, preserve it.
-- The upload can update the GitHub Pages address before the CU address reflects the changes. Check both after the deployment has updated.
-- If GitHub displays an upload or commit error, do not repeatedly click Commit. Take a screenshot of the message and resolve that first.
+IMPORTANT METRICS NOTE
+The metrics panel does not display copied citation numbers. It links to the PI's Google Scholar profile, where Google Scholar updates citation counts, h-index and i10-index. This avoids displaying stale or unverified values on the static website.

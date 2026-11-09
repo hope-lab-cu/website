@@ -46,16 +46,6 @@
     .protocols-hero .hero-copy h1 span { color:#111111; }
     .protocols-hero .hero-copy h1 em { display:inline-block; color:#287C92; font-style:normal; }
     .protocols-hero .hero-description { max-width:760px; }
-    .protocol-index-section { padding-top:66px; }
-    .protocol-card-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:15px; }
-    .protocol-index-card { display:flex; flex-direction:column; align-items:flex-start; min-height:178px; padding:15px 15px 14px; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow); color:var(--text); transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease; }
-    .protocol-index-card:hover { color:var(--text); border-color:color-mix(in srgb,var(--accent) 48%,var(--line)); transform:translateY(-3px); box-shadow:0 16px 32px rgba(38,93,110,.12); }
-    .protocol-card-number { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; margin-bottom:9px; border-radius:10px; background:var(--surface-2); color:var(--accent); font:700 .78rem var(--display); }
-    .protocol-card-kicker { color:var(--accent); font:700 .58rem/1.5 var(--display); letter-spacing:.12em; }
-    .protocol-index-card h3 { margin:6px 0 6px; font:700 .94rem/1.32 var(--display); letter-spacing:-.02em; }
-    .protocol-index-card p { margin:0 0 8px; color:var(--muted); font-size:.81rem; line-height:1.5; }
-    .protocol-card-member-note { margin:0 0 15px; color:var(--muted-2); font-size:.75rem; line-height:1.5; }
-    .protocol-card-link { display:inline-flex; gap:7px; align-items:center; margin-top:auto; color:var(--accent); font-size:.74rem; font-weight:700; }
     .protocol-download-section { background:var(--surface-2); }
     .protocol-download-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
     .protocol-download-card { display:flex; flex-direction:column; align-items:flex-start; min-height:270px; padding:23px; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); box-shadow:var(--shadow); scroll-margin-top:105px; }
@@ -72,8 +62,7 @@
     .protocol-download-link:hover { text-decoration:underline; }
     .protocol-use-note { margin-top:21px; padding:17px 19px; border:1px solid var(--line); border-left:3px solid #287C92; border-radius:0 10px 10px 0; background:var(--surface); color:var(--muted-2); font-size:.87rem; line-height:1.75; }
     .protocol-use-note p { margin:0; }
-    @media (max-width:1000px) { .protocol-card-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-    @media (max-width:760px) { .protocol-card-grid,.protocol-download-grid { grid-template-columns:1fr; } .protocol-index-card,.protocol-download-card { min-height:0; padding:19px; } }
+        @media (max-width:760px) { .protocol-download-grid { grid-template-columns:1fr; } .protocol-download-card { min-height:0; padding:19px; } }
   </style>
 </head>
 <body data-design="coastal" data-page="protocols">
@@ -94,7 +83,7 @@
     <div class="hero-intro">
       <p class="hero-label">HOPE LAB METHODS LIBRARY</p>
       <div class="hero-visual page-cover-visual">
-        <img src="./assets/images/Laboratory-methods-experimental-protocols.png" alt="HOPE Lab laboratory methods and experimental protocols, including microbiology, biochemical assays and analytical research workflows" fetchpriority="high">
+        <img src="./assets/images/Laboratory-methods-experimental-protocols.png" alt="HOPE Lab laboratory methods and experimental protocols, including microbiology, biochemical assays and analytical research workflows" fetchpriority="high" onerror="this.onerror=null;this.src='./assets/images/home-science.webp'">
         <p class="visual-caption">MICROBIAL METHODS • BIOCHEMISTRY • ANALYTICAL WORKFLOWS</p>
       </div>
     </div>
@@ -105,36 +94,16 @@
   </div>
 </section>
 
-<section class="section protocol-index-section" id="method-index">
-  <div class="site-shell">
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">METHODS USED IN HOPE LAB</p>
-        <h2>Laboratory Methods and Analytical Protocols</h2>
-        <p class="section-subtitle">A collection of laboratory and analytical methods employed in HOPE Lab research and used in student training. The accompanying documents provide method-specific guidance on experimental objectives, procedures, controls, interpretation and reporting.</p>
-      </div>
-    </div>
-    <div class="protocol-card-grid">
-      <a class="protocol-index-card" href="#protocol-01"><span class="protocol-card-number">01</span><span class="protocol-card-kicker">MICROBIAL CULTURE</span><h3>Microbial Culture Media, Isolation, Purification and Preservation</h3><p>Method selection for culture media, colony isolation, streak-plate and spread-plate concepts, purity assessment and documented culture storage.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-      <a class="protocol-index-card" href="#protocol-02"><span class="protocol-card-number">02</span><span class="protocol-card-kicker">ANTIMICROBIAL RESEARCH</span><h3>Antimicrobial Susceptibility Testing (AST)</h3><p>Overview of disk-diffusion and dilution-based AST, quality-control principles, current standards and responsible interpretation.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-      <a class="protocol-index-card" href="#protocol-03"><span class="protocol-card-number">03</span><span class="protocol-card-kicker">PROBIOTIC CHARACTERIZATION</span><h3>LAB Autoaggregation and Coaggregation Assays</h3><p>Optical-density-based assessment of self-aggregation and interactions between paired microbial partners, with calculations and controls.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-      <a class="protocol-index-card" href="#protocol-04"><span class="protocol-card-number">04</span><span class="protocol-card-kicker">FUNCTIONAL MICROBIAL PRODUCTS</span><h3>Emulsification Index (E24) Assay</h3><p>Assessment of 24-hour emulsion stability in prepared cell-free samples, including control design, calculation and interpretation.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-      <a class="protocol-index-card" href="#protocol-05"><span class="protocol-card-number">05</span><span class="protocol-card-kicker">MICROBIAL COMMUNITY ANALYSIS</span><h3>16S rRNA Amplicon Analysis with QIIME 2 and DADA2</h3><p>Computational processing of demultiplexed FASTQ files for ASV inference, taxonomic assignment, diversity analysis and quality review.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-      <a class="protocol-index-card" href="#protocol-06"><span class="protocol-card-number">06</span><span class="protocol-card-kicker">ANTIOXIDANT ASSESSMENT</span><h3>DPPH Radical Scavenging Assay</h3><p>Colorimetric assessment of in-vitro radical-scavenging activity, including sample blanks, antioxidant references and concentration-response interpretation.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-      <a class="protocol-index-card" href="#protocol-07"><span class="protocol-card-number">07</span><span class="protocol-card-kicker">EXTRACELLULAR ENZYME ACTIVITY</span><h3>Hydrolytic Enzyme Screening: Protease, Pectinase, Cellulase and Amylase</h3><p>Substrate-specific screening concepts for extracellular hydrolytic activities, including controls, halo interpretation and reporting.</p><span class="protocol-card-link">Method details <span aria-hidden="true">↗</span></span></a>
-    </div>
-  </div>
-</section>
 
 <section class="section protocol-download-section" id="downloadable-guides">
   <div class="site-shell">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">LABORATORY RESOURCES</p>
+        <p class="eyebrow">METHODS USED IN HOPE LAB</p>
         <h2>Protocols, Methods and Research Workflows</h2>
       </div>
     </div>
-    <blockquote class="protocol-use-note"><p>These materials represent methodological approaches employed in HOPE Lab's research and student training. Protocols may have been adapted to specific organisms, samples, instruments and experimental objectives. Their suitability and reproducibility under different conditions have not necessarily been established. Researchers using these materials outside HOPE Lab should independently assess and validate the methods and assume responsibility for their application and interpretation.</p></blockquote>
+    <blockquote class="protocol-use-note"><p>A collection of laboratory and analytical methods employed in HOPE Lab research and used in student training. Protocols may have been adapted to specific organisms, samples, instruments and experimental objectives. Their suitability and reproducibility under different conditions have not necessarily been established. Researchers using these materials outside HOPE Lab should independently assess and validate the methods and assume responsibility for their application and interpretation.</p></blockquote>
     <div class="protocol-download-grid">
       <article class="protocol-download-card" id="protocol-01">
         <div class="protocol-download-top"><span class="protocol-download-code">01</span><span class="protocol-download-format">PDF · METHOD REFERENCE</span></div>
@@ -142,7 +111,7 @@
         <p><strong>Objective:</strong> Explain the roles of culture-media selection, colony isolation, purity assessment and preservation documentation in supervised microbiology research.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Distinguishes streak-plate isolation from spread-plate enumeration, outlines media-performance and sterility checks, and describes the records needed to maintain authenticated cultures. Operational culture conditions are governed by institutionally approved SOPs.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to microbial culture media, colony isolation, purification and preservation methods used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_01_Microbial_Media_Isolation_Purification_Preservation_Reference.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open culture methods reference (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_01_Microbial_Media_Isolation_Purification_Preservation_Reference.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download culture methods reference (PDF)</a>
       </article>
       <article class="protocol-download-card" id="protocol-02">
         <div class="protocol-download-top"><span class="protocol-download-code">02</span><span class="protocol-download-format">PDF · STANDARDS REFERENCE</span></div>
@@ -150,7 +119,7 @@
         <p><strong>Objective:</strong> Summarize the principles, standardization requirements and reporting considerations for antimicrobial susceptibility testing.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Introduces disk-diffusion and dilution-based AST, organism-specific interpretive criteria, reference quality controls and the need to consult the current CLSI standard. It does not reproduce proprietary breakpoint tables or provide an executable AST procedure.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to antimicrobial susceptibility testing methods used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_02_Antimicrobial_Susceptibility_Testing_AST_Reference.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open AST standards reference (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_02_Antimicrobial_Susceptibility_Testing_AST_Reference.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download AST standards reference (PDF)</a>
       </article>
       <article class="protocol-download-card" id="protocol-03">
         <div class="protocol-download-top"><span class="protocol-download-code">03</span><span class="protocol-download-format">PDF · ASSAY REFERENCE</span></div>
@@ -158,7 +127,7 @@
         <p><strong>Objective:</strong> Describe in-vitro aggregation characteristics relevant to the phenotypic evaluation of probiotic lactic acid bacteria.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Explains optical-density-based assessment, autoaggregation and coaggregation calculations, monoculture comparisons, matrix controls and limitations when inferring adhesion-related properties.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to LAB autoaggregation and coaggregation assays used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_03_LAB_Autoaggregation_Coaggregation_Assays_Reference.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open aggregation assay reference (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_03_LAB_Autoaggregation_Coaggregation_Assays_Reference.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download aggregation assay reference (PDF)</a>
       </article>
       <article class="protocol-download-card" id="protocol-04">
         <div class="protocol-download-top"><span class="protocol-download-code">04</span><span class="protocol-download-format">PDF · ASSAY REFERENCE</span></div>
@@ -166,7 +135,7 @@
         <p><strong>Objective:</strong> Estimate the proportion of a liquid mixture represented by a stable emulsion after 24 hours.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Uses pre-prepared, cell-free non-viable test material and a selected food-grade oil. The guide describes matched matrix and positive reference controls, the E24 calculation, replicate documentation and interpretation limits.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to emulsification index (E24) methods used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_04_Emulsification_Index_E24_Assay.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open E24 assay reference (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_04_Emulsification_Index_E24_Assay.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download E24 assay reference (PDF)</a>
       </article>
       <article class="protocol-download-card" id="protocol-05">
         <div class="protocol-download-top"><span class="protocol-download-code">05</span><span class="protocol-download-format">PDF · COMPUTATIONAL WORKFLOW</span></div>
@@ -174,7 +143,7 @@
         <p><strong>Objective:</strong> Infer amplicon sequence variants and characterize taxonomic composition and microbial community diversity from processed 16S rRNA sequence data.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Covers manifest validation, sequence import, quality inspection, DADA2 denoising, taxonomic classification, diversity analysis, control review and provenance retention. It starts from digital FASTQ files and excludes wet-lab sample processing.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to 16S rRNA amplicon analysis with QIIME 2 and DADA2 used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_05_16S_rRNA_QIIME2_DADA2_Analysis.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open 16S rRNA analysis workflow (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_05_16S_rRNA_QIIME2_DADA2_Analysis.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download 16S rRNA analysis workflow (PDF)</a>
       </article>
       <article class="protocol-download-card" id="protocol-06">
         <div class="protocol-download-top"><span class="protocol-download-code">06</span><span class="protocol-download-format">PDF · ASSAY REFERENCE</span></div>
@@ -182,7 +151,7 @@
         <p><strong>Objective:</strong> Estimate in-vitro radical-scavenging capacity using the DPPH colorimetric assay.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Explains the DPPH absorbance principle, sample and reagent blanks, positive antioxidant references, blank-corrected scavenging calculation and concentration-response interpretation.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to DPPH radical-scavenging methods used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_06_DPPH_Radical_Scavenging_Antioxidant_Assay_Reference.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open DPPH assay reference (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_06_DPPH_Radical_Scavenging_Antioxidant_Assay_Reference.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download DPPH assay reference (PDF)</a>
       </article>
       <article class="protocol-download-card" id="protocol-07">
         <div class="protocol-download-top"><span class="protocol-download-code">07</span><span class="protocol-download-format">PDF · METHOD REFERENCE</span></div>
@@ -190,7 +159,7 @@
         <p><strong>Objective:</strong> Summarize substrate-specific approaches for evaluating extracellular hydrolytic enzyme-associated activity.</p>
         <div class="protocol-overview"><strong>Method overview:</strong> Links protease, pectinase, cellulase and amylase activity with appropriate substrate classes and detection principles, and reviews blank/reference controls, growth context and halo reporting.</div>
         <p class="protocol-member-note">HOPE Lab member copy: retained for convenient student reference to protease, pectinase, cellulase and amylase screening methods used in relevant research and training.</p>
-        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_07_Hydrolytic_Enzyme_Screening_Protease_Pectinase_Cellulase_Amylase.pdf" target="_blank" rel="noopener noreferrer" title="Open PDF in a new browser tab"><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Open hydrolytic enzyme screening reference (PDF)</a>
+        <a class="protocol-download-link" href="./assets/protocols/HOPE_Lab_07_Hydrolytic_Enzyme_Screening_Protease_Pectinase_Cellulase_Amylase.pdf" download><span class="protocol-pdf-icon" aria-hidden="true"><svg viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1.5h9l5 5V23a1.5 1.5 0 0 1-1.5 1.5h-12A1.5 1.5 0 0 1 4 23V3A1.5 1.5 0 0 1 5.5 1.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M14 1.8V7h5" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 14.3h11M6.5 17.2h11" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><text x="12" y="22" text-anchor="middle" font-size="5.2" font-weight="800" fill="currentColor">PDF</text></svg></span>Download hydrolytic enzyme screening reference (PDF)</a>
       </article>
     </div>
   </div>

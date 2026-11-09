@@ -11,6 +11,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* Match email and social links to the location-address typography. */
+    .contact-card .contact-methods a:not(.contact-card-link) {
+      display: block;
+      width: fit-content;
+      color: var(--accent);
+      font-family: var(--body);
+      font-size: .86rem;
+      font-weight: 400;
+      line-height: 1.7;
+    }
+    .contact-card .contact-methods a:not(.contact-card-link):hover { color: var(--accent-2); }
+  </style>
 </head>
 <body data-design="coastal" data-page="contact">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -21,7 +34,7 @@
       <span class="brand-copy"><small>University of Chittagong</small></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">Menu</button>
-    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><a class="nav-link " href="./index.html" >Home</a><a class="nav-link " href="./research.html" >Research</a><a class="nav-link" href="./protocols.html">Protocols &amp; Resources</a><a class="nav-link " href="./publications.html" >Publications &amp; Preprints</a><a class="nav-link " href="./people.html" >People</a><a class="nav-link active" href="./contact.html" aria-current="page">Contact</a><a class="nav-cta" href="./contact.html">Get in touch <span aria-hidden="true">↗</span></a></nav>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><a class="nav-link " href="./index.html" >Home</a><a class="nav-link " href="./research.html" >Research</a><a class="nav-link " href="./publications.html" >Publications &amp; Preprints</a><a class="nav-link " href="./people.html" >People</a><a class="nav-link" href="./protocols.html">Protocols &amp; Resources</a><a class="nav-link active" href="./contact.html" aria-current="page">Contact</a><a class="nav-cta" href="./contact.html">Get in touch <span aria-hidden="true">↗</span></a></nav>
   </div>
 </header>
 <main id="main"><section class="hero hero-home site-cover-hero page-cover-hero">
@@ -29,7 +42,7 @@
     <div class="hero-intro">
       <p class="hero-label">CONNECT WITH HOPE LAB</p>
       <div class="hero-visual page-cover-visual">
-        <img src="./assets/images/HOPE-Lab-Contact-Connect.jfif" alt="Illustration representing connections between biological systems and the environment" fetchpriority="high">
+        <img src="./assets/images/ecosystem.svg" alt="Illustration representing connections between biological systems and the environment" fetchpriority="high">
         <p class="visual-caption">SCIENTIFIC DISCUSSION • COLLABORATION • INQUIRIES</p>
       </div>
       
@@ -41,7 +54,7 @@
   </div>
 </section>
 <section class="section contact-details-section"><div class="site-shell"><div class="contact-card-grid">
-  <article class="contact-card"><span class="contact-symbol" aria-hidden="true">@</span><p class="eyebrow">EMAIL</p><h2>Contact us</h2><p><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a class="social-footer-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer">HOPE Lab on LinkedIn ↗</a><a class="social-footer-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer">HOPE Lab on Facebook ↗</a></p></article>
+  <article class="contact-card"><span class="contact-symbol" aria-hidden="true">@</span><p class="eyebrow">EMAIL</p><h2>Contact us</h2><p class="contact-methods"><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a class="social-footer-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer">HOPE Lab on LinkedIn ↗</a><a class="social-footer-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer">HOPE Lab on Facebook ↗</a></p></article>
   <article class="contact-card"><span class="contact-symbol" aria-hidden="true">⌖</span><p class="eyebrow">LOCATION</p><h2>University of Chittagong</h2><p>Department of Biochemistry and Molecular Biology, University of Chittagong, Chattogram-4331, Bangladesh.</p><a class="contact-card-link" href="https://www.google.com/maps/search/?api=1&query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">View location ↗</a></article>
   <article class="contact-card"><span class="contact-symbol" aria-hidden="true">◷</span><p class="eyebrow">OFFICE HOURS</p><h2>Sun–Thursday</h2><p>9:00 AM – 3:30 PM<br>Friday–Saturday: Closed</p></article>
 </div></div></section>

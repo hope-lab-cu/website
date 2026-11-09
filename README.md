@@ -1,5 +1,9 @@
-# HOPE Lab website update
+# HOPE Lab Website
 
-This package adds official laboratory social links to the existing Connect footer on all five pages, a discreet expandable Connect control on all pages, and academic profile links plus a Google Scholar metrics access panel beneath the PI description on the People page. Existing content, page structure, images, and Alumni one-per-row layout are preserved.
+Static website for the Laboratory for Health, Omics and Pathway Exploration (HOPE Lab), Department of Biochemistry and Molecular Biology, University of Chittagong.
 
-Google Scholar citation metrics are not copied into this static website because Google does not provide a supported public API for embedding profile metrics. The panel links directly to the public Scholar profile, where Google updates citations, h-index and i10-index.
+## Methods & Resources page
+
+The `protocols.html` page includes downloadable, reference-based PDF guides in `assets/protocols/`. The guides cover (1) computational 16S rRNA amplicon analysis with QIIME 2/DADA2, (2) LC-MS metabolomics data quality and analysis, (3) microbial research metadata and reproducibility, and (4) a non-operational wet-lab method-selection and reporting guide. These are educational reference documents, not institutionally approved or lab-validated SOPs.
+
+Before publication, the lab should review the documents, confirm institutional wording and add any formally approved local SOPs only after the relevant scientific, safety and institutional review.

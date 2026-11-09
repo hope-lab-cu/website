@@ -1,17 +1,7 @@
-HOPE LAB WEBSITE UPDATE — SOCIAL & ACADEMIC PROFILES
+HOPE Lab website update
 
-This update preserves the existing five pages and assets. Changes are limited to: (1) LinkedIn and Facebook links in the existing Connect footer on all five pages; (2) a small expandable Connect control on all pages; (3) PI academic-profile links and a Google Scholar metrics access panel beneath the PI description on people.html. The Alumni one-person-per-row layout is retained.
+Upload the contents of this website-main folder to the existing website repository, preserving the current folder structure. This update replaces people.html with the supplied revised People page, replaces protocols.html with the new Protocols & Resources page, updates the protocol link label where already present, and adds seven PDF files under assets/protocols/.
 
-UPLOAD (GitHub website in browser)
-1. Back up the repository: open https://github.com/hope-lab-cu/website, select Code, click the green Code button, then Download ZIP. Keep that backup.
-2. Download and extract this ZIP on your computer. Do not upload the ZIP itself.
-3. Open the repository and ensure the branch is main.
-4. Choose Add file > Upload files.
-5. Open the extracted folder, select all its contents (five HTML files and assets folder, plus README and this instruction file), and drag them into GitHub's upload area.
-6. Do not delete the existing repository files first. Matching files will be replaced when committed; unrelated repository configuration files remain. Preserve any CNAME, .gitignore or .github files already in the repository.
-7. Scroll down, enter a commit message such as “Add HOPE Lab social and PI academic profile links”, select Commit directly to main, and click Commit changes once.
-8. Keep Settings > Pages configured to deploy from main / (root).
-9. Check https://hope-lab-cu.github.io/website/ first, then https://cu.ac.bd/hope-lab/. If the old version remains temporarily, wait for deployment and refresh.
+Do not upload only the HTML page: the downloadable PDF links require the files in assets/protocols/.
 
-IMPORTANT METRICS NOTE
-The metrics panel does not display copied citation numbers. It links to the PI's Google Scholar profile, where Google Scholar updates citation counts, h-index and i10-index. This avoids displaying stale or unverified values on the static website.
+The PDF documents are student-reference resources, not formally approved institutional SOPs. Wet-lab guides intentionally provide method principles, controls and reporting considerations rather than operational instructions for culturing or testing potentially hazardous organisms.

@@ -67,20 +67,141 @@
       }
     }
 
-    /* PI profile links and metrics remain separate, full-width blocks below the biography. */
-    .people-pi-section .pi-academic-links-standalone {
-      margin: 18px 0 0;
-      padding: 17px 19px;
+    /* Keep the PI details, profiles and metrics together in one contained card. */
+    .people-pi-section .pi-profile-card {
+      display: grid;
+      grid-template-columns: 148px minmax(0, 1fr);
+      align-items: start;
+      gap: clamp(20px, 3vw, 34px);
+      width: 100%;
+      box-sizing: border-box;
+      padding: clamp(20px, 3.2vw, 34px);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       background: var(--surface);
+      box-shadow: 0 8px 24px rgba(24, 68, 88, .07);
+    }
+    .people-pi-section .pi-profile-mark {
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      width: 100%;
+      min-height: 104px;
+      height: auto;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 17px 12px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #f7fbfd;
+      text-align: center;
+    }
+    .people-pi-section .pi-profile-mark strong {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 1.1;
+      letter-spacing: .04em;
+    }
+    .people-pi-section .pi-profile-mark small {
+      display: block;
+      font-size: .72rem;
+      line-height: 1.4;
+    }
+    .people-pi-section .pi-profile-content {
+      min-width: 0;
+    }
+    .people-pi-section .pi-profile-content > h3:first-child {
+      margin-top: 0;
+    }
+
+    /* Profile icons sit directly on the shared card, not inside a second box. */
+    .people-pi-section .pi-academic-links-standalone {
+      margin: 20px 0 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+    .people-pi-section .pi-academic-links-standalone .pi-links-label {
+      margin: 0 0 12px;
+    }
+    .people-pi-section .pi-academic-links-standalone .pi-profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Metrics follow the profile links inside the same PI card. */
+    .people-pi-section .academic-metrics {
+      margin: 22px 0 0;
+      padding: 19px 0 0;
+      border-top: 1px solid var(--line);
+    }
+    .people-pi-section .academic-metrics-heading {
+      margin: 0 0 13px;
+    }
+    .people-pi-section .academic-metrics-heading h4 {
+      margin: 0;
     }
     .people-pi-section .pi-metrics-grid {
+      display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
     }
+    .people-pi-section .pi-metrics-grid .metric-item {
+      min-width: 0;
+      box-sizing: border-box;
+      padding: 9px 13px;
+      border-left: 1px solid var(--line);
+      text-align: center;
+    }
+    .people-pi-section .pi-metrics-grid .metric-item:first-child {
+      border-left: 0;
+    }
+    .people-pi-section .pi-metrics-grid .metric-item strong {
+      color: #8A3B2E !important;
+      font-weight: 400 !important;
+    }
+    .people-pi-section .metrics-note {
+      margin-top: 14px;
+    }
+    .people-pi-section .metrics-link {
+      display: inline-block;
+      margin-top: 5px;
+    }
+
     @media (max-width: 700px) {
+      .people-pi-section .pi-profile-card {
+        grid-template-columns: 112px minmax(0, 1fr);
+        gap: 18px;
+      }
+      .people-pi-section .pi-profile-mark {
+        min-height: 96px;
+      }
       .people-pi-section .pi-metrics-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .people-pi-section .pi-metrics-grid .metric-item:nth-child(2n + 1) {
+        border-left: 0;
+      }
+      .people-pi-section .pi-metrics-grid .metric-item:nth-child(n + 3) {
+        border-top: 1px solid var(--line);
+      }
+    }
+    @media (max-width: 560px) {
+      .people-pi-section .pi-profile-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        padding: 19px;
+      }
+      .people-pi-section .pi-profile-mark {
+        width: 112px;
+        min-height: 88px;
+        justify-self: start;
       }
     }
   </style>
@@ -182,8 +303,6 @@
     </a>
   </div>
 </div>
-</div></article>
-
 <section class="academic-metrics" aria-labelledby="academic-metrics-title">
   <div class="academic-metrics-heading">
     <div><h4 id="academic-metrics-title">Academic metrics</h4></div>
@@ -197,7 +316,7 @@
   <p class="metrics-note">Figures are manually maintained from the PI's Google Scholar profile. Last updated: 6 November 2026.</p>
   <a class="metrics-link" href="https://scholar.google.co.jp/citations?hl=en&amp;user=uh9CW7QAAAAJ" target="_blank" rel="noopener noreferrer">View Google Scholar profile ↗</a>
 </section>
-</div></section>
+</div></article></div></section>
 <section class="section people-group-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">HOPE LAB MEMBERS</p><h2>Research Assistants</h2></div><span class="people-count">04 MEMBERS</span></div><div class="people-grid people-pairs"><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AA</span><div><h3>Asif Mahmud Antar</h3><p>Postgraduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">AS</span><div><h3>Abrar Faiyaz Shihab</h3><p>Postgraduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">FN</span><div><h3>Foujea Afrin Nipa</h3><p>Postgraduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">MT</span><div><h3>Musfika Akhter Turna</h3><p>Postgraduate student</p></div></article></div></div></div></section><section class="section people-group-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">HOPE LAB MEMBERS</p><h2>Research Students</h2></div><span class="people-count">05 MEMBERS</span></div><div class="people-grid people-pairs"><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">RJ</span><div><h3>Rahatul Jannat</h3><p>Graduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">TI</span><div><h3>Tahjib Islam</h3><p>Graduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AA</span><div><h3>Aurgha Acharjee</h3><p>Graduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">SA</span><div><h3>Samia Akter</h3><p>Graduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AQ</span><div><h3>Azmir Arif Al Quraishi</h3><p>Graduate student</p></div></article></div></div></div></section><section class="section people-group-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">HOPE LAB MEMBERS</p><h2>Trainees</h2></div><span class="people-count">03 MEMBERS</span></div><div class="people-grid people-pairs"><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">SF</span><div><h3>Shafiullah Al Fahad</h3><p>Undergraduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">PG</span><div><h3>Prome Ghosh</h3><p>Undergraduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AR</span><div><h3>Antara Raisa</h3><p>Undergraduate student</p></div></article></div></div></div></section>
 <section class="section alumni-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">FORMER MEMBERS</p><h2>Alumni</h2><p class="section-subtitle">HOPE Lab acknowledges former members who contributed to its research activities.</p><p class="section-note alumni-updated">Affiliations and positions reflect information available to HOPE Lab and were last reviewed in 2026.</p></div></div><div class="people-grid alumni-grid"><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">IF</span><div><h3>Ibrahim Khalil Faisal</h3><p>Currently Biochemist, Ibne Sina Diagnostics.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">IN</span><div><h3>Iqbal Hossain Nafiz</h3><p>Currently PhD researcher at the Korea Institute of Science and Technology.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">JS</span><div><h3>Jasmin Sultana</h3><p>Alumna.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">KA</span><div><h3>Khadiza Akter</h3><p>Currently Assistant Teacher.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MM</span><div><h3>Mahzabeen Muntaha</h3><p>Currently Assistant Teacher.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MC</span><div><h3>Mohammad Nazmul Ahmed Chowdhury</h3><p>Currently BCS-cadre college teacher (gazetted).</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MB</span><div><h3>Mohammed Sajjad Hossain Bappi</h3><p>Currently PhD researcher at The Ohio State University, United States.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MK</span><div><h3>Md. Sajib Khan</h3><p>Currently Research Fellow at the National Institute of Biotechnology (NIB).</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MD</span><div><h3>Mukta Das</h3><p>Currently Lecturer, CMP College.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">RI</span><div><h3>Raihanul Islam</h3><p>Currently Biochemist at Popular Diagnostics.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">SZ</span><div><h3>Subrina Akter Zedny</h3><p>Currently PhD researcher at the University of Adelaide, Australia.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">SC</span><div><h3>Sumaiya Islam Chowdhury</h3><p>Currently Scientific Officer, BCSIR.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">TR</span><div><h3>Tanjilur Rahman</h3><p>Currently PhD researcher at the University of Queensland, Australia.</p></div></article></div></div></section>
 <section class="section opportunities-section" id="prospective-students"><div class="site-shell opportunities-inner"><div><p class="eyebrow">PEOPLE AND OPPORTUNITIES</p><h2>Student Research Opportunities</h2><p>Students interested in research in microbial biochemistry, biotechnology, probiotics, functional biomolecules, genomics, and related fields are welcome to inquire about opportunities. We encourage students to have a genuine reason for pursuing research and a clear idea of how the experience may contribute to achieve their life goal. Opportunities depend on ongoing projects, available supervision, and laboratory capacity. Integrity, responsibility, and a willingness to learn are essential.</p></div><a class="button button-primary" href="./contact.html">Contact HOPE Lab <span aria-hidden="true">↗</span></a></div></section></main>
@@ -209,7 +328,7 @@
       <p class="footer-keywords">One Health · Microbial Biochemistry · Sustainable Biotechnology</p>
     </div>
     <div class="footer-col"><h2>Research</h2><a href="./protocols.html">Protocols &amp; Resources</a><a href="./research.html">Research areas</a><a href="./research.html#discovery-to-impact">Discovery to Impact</a><a href="./publications.html">Publications</a><a href="./publications.html#preprints">Preprints</a></div>
-    <div class="footer-col"><h2>People & Opportunities</h2><a href="./people.html">Lab members</a><a href="./people.html#prospective-students">Student research opportunities</a><a href="./contact.html">Contact</a></div>
+    <div class="footer-col"><h2>People &amp; Opportunities</h2><a href="./people.html">Lab members</a><a href="./people.html#prospective-students">Student research opportunities</a><a href="./contact.html">Contact</a></div>
     <div class="footer-col"><h2>Connect</h2><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a class="social-footer-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer">HOPE Lab on LinkedIn ↗</a><a class="social-footer-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer">HOPE Lab on Facebook ↗</a><a href="https://sites.google.com/view/hope-lab" target="_blank" rel="noopener noreferrer">English Google Sites website ↗</a><a href="https://sites.google.com/view/hope-research" target="_blank" rel="noopener noreferrer">বাংলা ওয়েবসাইট ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">University location ↗</a></div>
   </div>
   <div class="site-shell footer-bottom"><span>© <span id="current-year">2026</span> Laboratory for Health, Omics and Pathway Exploration (HOPE Lab)</span><span>University of Chittagong</span></div>

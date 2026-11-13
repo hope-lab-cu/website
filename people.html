@@ -1,338 +1,570 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description" content="Meet Dr. Tanim Jabid Hossain and the research members of HOPE Lab, Department of Biochemistry and Molecular Biology, University of Chittagong.">
+
   <meta name="theme-color" content="#f7fbfd">
+
   <title>People &amp; Principal Investigator | HOPE Lab</title>
+
   <link rel="canonical" href="https://cu.ac.bd/hope-lab/people.html">
+
   <link rel="icon" href="./assets/images/hope-lab-symbol.png" type="image/png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <style>
+
     /* Alumni-only refinement: each former member appears as a distinct row. */
+
     .alumni-section .alumni-grid {
+
       display: grid;
+
       grid-template-columns: minmax(0, 1fr);
+
       gap: 0;
+
       border-top: 1px solid var(--line);
-    }
-    .alumni-section .alumni-grid .alumni-card {
-      display: grid;
-      grid-template-columns: 42px minmax(0, 1fr);
-      align-items: start;
-      column-gap: 15px;
-      width: 100%;
-      padding: 16px 7px;
-      border: 0;
-      border-bottom: 1px solid var(--line);
-      border-radius: 0;
-      background: transparent;
-      box-shadow: none;
-    }
-    .alumni-section .alumni-grid .alumni-card .person-marker {
-      grid-column: 1;
-      grid-row: 1;
-      margin-top: 2px;
-    }
-    .alumni-section .alumni-grid .alumni-card > div {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 5px;
-      min-width: 0;
-    }
-    .alumni-section .alumni-grid .alumni-card h3 {
-      margin: 0;
-      color: var(--text);
-      font-size: 1rem;
-      line-height: 1.35;
-    }
-    .alumni-section .alumni-grid .alumni-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: .86rem;
-      line-height: 1.5;
-      text-align: left;
-    }
-    @media (max-width: 560px) {
-      .alumni-section .alumni-grid .alumni-card {
-        grid-template-columns: 38px minmax(0, 1fr);
-        column-gap: 12px;
-        padding: 14px 2px;
-      }
+
     }
 
-    /* Keep the PI details, profiles and metrics together in one contained card. */
+    .alumni-section .alumni-grid .alumni-card {
+
+      display: grid;
+
+      grid-template-columns: 42px minmax(0, 1fr);
+
+      align-items: start;
+
+      column-gap: 15px;
+
+      width: 100%;
+
+      padding: 16px 7px;
+
+      border: 0;
+
+      border-bottom: 1px solid var(--line);
+
+      border-radius: 0;
+
+      background: transparent;
+
+      box-shadow: none;
+
+    }
+
+    .alumni-section .alumni-grid .alumni-card .person-marker {
+
+      grid-column: 1;
+
+      grid-row: 1;
+
+      margin-top: 2px;
+
+    }
+
+    .alumni-section .alumni-grid .alumni-card > div {
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: flex-start;
+
+      justify-content: flex-start;
+
+      gap: 5px;
+
+      min-width: 0;
+
+    }
+
+    .alumni-section .alumni-grid .alumni-card h3 {
+
+      margin: 0;
+
+      color: var(--text);
+
+      font-size: 1rem;
+
+      line-height: 1.35;
+
+    }
+
+    .alumni-section .alumni-grid .alumni-card p {
+
+      margin: 0;
+
+      color: var(--muted);
+
+      font-size: .86rem;
+
+      line-height: 1.5;
+
+      text-align: left;
+
+    }
+
+    @media (max-width: 560px) {
+
+      .alumni-section .alumni-grid .alumni-card {
+
+        grid-template-columns: 38px minmax(0, 1fr);
+
+        column-gap: 12px;
+
+        padding: 14px 2px;
+
+      }
+
+    }
+
+
+
+    /* Unified, refined PI profile card */
     .people-pi-section .pi-profile-card {
       display: grid;
-      grid-template-columns: 148px minmax(0, 1fr);
+      grid-template-columns: 205px minmax(0, 1fr);
       align-items: start;
-      gap: clamp(20px, 3vw, 34px);
-      width: 100%;
-      box-sizing: border-box;
-      padding: clamp(20px, 3.2vw, 34px);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
-      box-shadow: 0 8px 24px rgba(24, 68, 88, .07);
+      gap: 26px 30px;
+      padding: 28px;
+      border: 1px solid rgba(20, 83, 72, .16);
+      border-top: 4px solid #287C92;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #ffffff 0%, #f8fcfa 100%);
+      box-shadow: 0 18px 42px rgba(7, 55, 49, .09);
+      overflow: hidden;
     }
     .people-pi-section .pi-profile-mark {
+      position: relative;
+      isolation: isolate;
       align-self: start;
+      width: 100%;
+      height: 166px;
+      min-height: 166px;
+      max-height: 166px;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid rgba(218, 195, 137, .72);
+      border-radius: 17px;
+      background: radial-gradient(circle at 50% 42%, rgba(128, 208, 181, .20) 0 24%, transparent 25%), linear-gradient(145deg, #002f32 0%, #07594f 62%, #398b78 100%);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 8px 22px rgba(0, 54, 48, .12);
+    }
+    .people-pi-section .pi-profile-mark::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 13px;
+      left: 50%;
+      width: 108px;
+      height: 108px;
+      transform: translateX(-50%);
+      border: 1px solid rgba(224, 199, 137, .72);
+      border-radius: 50%;
+    }
+    .people-pi-section .pi-profile-mark strong {
+      position: relative;
+      z-index: 1;
+      margin: 25px 0 8px;
+      color: #fffaf0;
+      font-size: 3.15rem;
+      font-weight: 500;
+      letter-spacing: .035em;
+      line-height: .95;
+    }
+    .people-pi-section .pi-profile-mark small {
+      position: relative;
+      z-index: 1;
+      color: #e7d7a9;
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-align: center;
+    }
+    .people-pi-section .pi-profile-content { min-width: 0; }
+    .people-pi-section .pi-academic-links-standalone {
+      margin: 18px 0 0;
+      padding: 16px 0 0;
+      border: 0;
+      border-top: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
+    }
+    /* Full-width academic metrics band remains inside the unified PI card. */
+    .people-pi-section .pi-academic-metrics {
+      grid-column: 1 / -1;
+      width: 100%;
+      margin: 0;
+      padding: 22px 24px 18px;
+      border: 1px solid rgba(45, 79, 72, .34);
+      border-radius: 17px;
+      background: #ffffff;
+      box-shadow: 0 5px 16px rgba(22, 48, 43, .045), inset 0 1px 0 rgba(255,255,255,.9);
+    }
+    .people-pi-section .pi-academic-metrics .academic-metrics-heading {
+      justify-content: center;
+      margin-bottom: 2px;
+    }
+    .people-pi-section .pi-academic-metrics .academic-metrics-heading h4 {
+      color: #254940;
+      font-size: 1.08rem;
+      font-weight: 700;
+      letter-spacing: .045em;
+      text-align: center;
+    }
+    .people-pi-section .pi-metrics-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 12px;
+    }
+    .people-pi-section .pi-metrics-grid .metric-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 7px;
-      width: 100%;
-      min-height: 104px;
-      height: auto;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 17px 12px;
-      border: 1px solid var(--line);
-      border-radius: 13px;
-      background: #f7fbfd;
-      text-align: center;
-    }
-    .people-pi-section .pi-profile-mark strong {
-      margin: 0;
-      font-size: 2rem;
-      line-height: 1.1;
-      letter-spacing: .04em;
-    }
-    .people-pi-section .pi-profile-mark small {
-      display: block;
-      font-size: .72rem;
-      line-height: 1.4;
-    }
-    .people-pi-section .pi-profile-content {
       min-width: 0;
-    }
-    .people-pi-section .pi-profile-content > h3:first-child {
-      margin-top: 0;
-    }
-
-    /* Profile icons sit directly on the shared card, not inside a second box. */
-    .people-pi-section .pi-academic-links-standalone {
-      margin: 20px 0 0;
-      padding: 0;
+      padding: 14px 15px 12px;
       border: 0;
       border-radius: 0;
       background: transparent;
-    }
-    .people-pi-section .pi-academic-links-standalone .pi-links-label {
-      margin: 0 0 12px;
-    }
-    .people-pi-section .pi-academic-links-standalone .pi-profile-links {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 12px;
-    }
-
-    /* Metrics follow the profile links inside the same PI card. */
-    .people-pi-section .academic-metrics {
-      margin: 22px 0 0;
-      padding: 19px 0 0;
-      border-top: 1px solid var(--line);
-    }
-    .people-pi-section .academic-metrics-heading {
-      margin: 0 0 13px;
-    }
-    .people-pi-section .academic-metrics-heading h4 {
-      margin: 0;
-    }
-    .people-pi-section .pi-metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 0;
-    }
-    .people-pi-section .pi-metrics-grid .metric-item {
-      min-width: 0;
-      box-sizing: border-box;
-      padding: 9px 13px;
-      border-left: 1px solid var(--line);
       text-align: center;
     }
-    .people-pi-section .pi-metrics-grid .metric-item:first-child {
-      border-left: 0;
+    .people-pi-section .pi-metrics-grid .metric-item + .metric-item {
+      border-left: 1px solid rgba(61, 76, 72, .28);
     }
     .people-pi-section .pi-metrics-grid .metric-item strong {
-      color: #8A3B2E !important;
-      font-weight: 400 !important;
+      color: #343a40;
+      font-family: var(--display);
+      font-size: 1.75rem;
+      font-weight: 400;
+      line-height: 1.08;
+      letter-spacing: -.025em;
+      text-align: center;
     }
-    .people-pi-section .metrics-note {
-      margin-top: 14px;
+    .people-pi-section .pi-metrics-grid .metric-item span {
+      color: #53615c;
+      font-size: .76rem;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: center;
     }
-    .people-pi-section .metrics-link {
-      display: inline-block;
-      margin-top: 5px;
+    .people-pi-section .pi-academic-metrics .metrics-note {
+      margin: 12px 0 3px;
+      color: #5b6662;
+      font-size: .76rem;
+      text-align: center;
     }
-
-    @media (max-width: 700px) {
+    .people-pi-section .pi-academic-metrics .metrics-link {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      color: #285b50;
+      font-size: .8rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    @media (max-width: 760px) {
       .people-pi-section .pi-profile-card {
-        grid-template-columns: 112px minmax(0, 1fr);
-        gap: 18px;
+        grid-template-columns: 1fr;
+        gap: 19px;
+        padding: 20px;
       }
       .people-pi-section .pi-profile-mark {
-        min-height: 96px;
+        width: 190px;
+        height: 145px;
+        min-height: 145px;
+        max-height: 145px;
+        margin: 0 auto;
       }
-      .people-pi-section .pi-metrics-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .people-pi-section .pi-profile-mark::before {
+        top: 8px;
+        width: 96px;
+        height: 96px;
       }
-      .people-pi-section .pi-metrics-grid .metric-item:nth-child(2n + 1) {
+      .people-pi-section .pi-profile-mark strong {
+        font-size: 2.85rem;
+        margin-top: 22px;
+      }
+    }
+    @media (max-width: 700px) {
+      .people-pi-section .pi-academic-metrics { padding: 18px 12px 16px; }
+      .people-pi-section .pi-metrics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .people-pi-section .pi-metrics-grid .metric-item:nth-child(3) {
+        border-top: 1px solid rgba(61, 76, 72, .28);
         border-left: 0;
       }
-      .people-pi-section .pi-metrics-grid .metric-item:nth-child(n + 3) {
-        border-top: 1px solid var(--line);
+      .people-pi-section .pi-metrics-grid .metric-item:nth-child(4) {
+        border-top: 1px solid rgba(61, 76, 72, .28);
       }
     }
-    @media (max-width: 560px) {
-      .people-pi-section .pi-profile-card {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 18px;
-        padding: 19px;
-      }
-      .people-pi-section .pi-profile-mark {
-        width: 112px;
-        min-height: 88px;
-        justify-self: start;
-      }
-    }
+
   </style>
 
+
+
   <meta property="og:site_name" content="HOPE Lab">
+
   <meta property="og:type" content="website">
+
   <meta property="og:title" content="People &amp; Principal Investigator | HOPE Lab">
+
   <meta property="og:description" content="Meet Dr. Tanim Jabid Hossain and the research members of HOPE Lab, Department of Biochemistry and Molecular Biology, University of Chittagong.">
+
   <meta property="og:url" content="https://cu.ac.bd/hope-lab/people.html">
+
   <meta property="og:image" content="https://cu.ac.bd/hope-lab/assets/images/People-members-of-HOPE-lab.png">
+
   <meta property="og:image:alt" content="Illustration representing a collaborative scientific research team">
+
   <meta property="og:image:width" content="1648">
+
   <meta property="og:image:height" content="954">
+
 <script type="application/ld+json">
+
 {
+
   "@context": "https://schema.org",
+
   "@type": "Person",
+
   "@id": "https://cu.ac.bd/hope-lab/people.html#tanim-jabid-hossain",
+
   "name": "Tanim Jabid Hossain",
+
   "honorificPrefix": "Dr.",
+
   "jobTitle": "Associate Professor; Founder and Principal Investigator, HOPE Lab",
+
   "url": "https://cu.ac.bd/hope-lab/people.html",
+
   "description": "Dr. Tanim Jabid Hossain is an Associate Professor at the University of Chittagong and Founder and Principal Investigator of HOPE Lab. A microbial biochemist, his research focuses on microbial metabolism, glycobiology, N-linked glycans, functional biomolecules and microbial interactions, using experimental biochemistry, microbiology, genomics, glycomics and metabolomics.",
-  "affiliation": [
-    {
-      "@type": "Organization",
-      "name": "Department of Biochemistry and Molecular Biology, University of Chittagong",
-      "url": "https://cu.ac.bd/"
+
+  "affiliation": https://cu.ac.bd/"
+
     },
+
     {
+
       "@id": "https://cu.ac.bd/hope-lab/#organization"
+
     }
+
   ],
-  "sameAs": [
-    "https://orcid.org/0000-0002-0978-2657",
+
+  "sameAs": https://orcid.org/0000-0002-0978-2657",
+
     "https://scholar.google.co.jp/citations?hl=en&user=uh9CW7QAAAAJ",
+
     "https://www.researchgate.net/profile/Tanim-Hossain",
+
     "https://www.linkedin.com/in/tanim-jabid-hossain",
+
     "https://chittagong.academia.edu/TanimHossain",
+
     "https://loop.frontiersin.org/people/1006260/overview",
+
     "https://cu.ac.bd/public_profile/index.php?ein=5297"
+
   ],
+
   "knowsAbout": [
+
     "Microbial biochemistry",
+
     "Microbial metabolism",
+
     "Glycobiology",
+
     "Functional biomolecules",
+
     "Genomics",
+
     "Glycomics",
+
     "Metabolomics",
+
     "One Health"
+
   ]
+
 }
+
 </script>
+
 </head>
+
 <body data-design="coastal" data-page="people">
+
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
+
   <div class="site-shell header-row">
+
     <a class="brand" href="./index.html" aria-label="HOPE Lab home">
+
       <img class="brand-logo" src="./assets/images/hope-lab-full-logo.png" alt="HOPE Lab" width="236" height="60">
+
       <span class="brand-copy"><small>University of Chittagong</small></span>
+
     </a>
+
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">Menu</button>
+
     <nav id="primary-nav" class="primary-nav" aria-label="Main navigation"><a class="nav-link " href="./index.html" >Home</a><a class="nav-link " href="./research.html" >Research</a><a class="nav-link " href="./publications.html" >Publications &amp; Preprints</a><a class="nav-link active" href="./people.html" aria-current="page">People</a><a class="nav-link" href="./protocols.html">Protocols &amp; Resources</a><a class="nav-link " href="./contact.html" >Contact</a><a class="nav-cta" href="./contact.html">Get in touch <span aria-hidden="true">↗</span></a></nav>
+
   </div>
+
 </header>
+
 <main id="main"><section class="hero hero-home site-cover-hero page-cover-hero">
+
   <div class="site-shell hero-grid">
+
     <div class="hero-intro">
+
       <p class="hero-label">THE PEOPLE BEHIND THE RESEARCH</p>
+
       <div class="hero-visual page-cover-visual">
+
         <img src="./assets/images/People-members-of-HOPE-lab.png" alt="Illustration representing a collaborative scientific research team" fetchpriority="high">
+
         <p class="visual-caption">PRINCIPAL INVESTIGATOR • RESEARCHERS • STUDENTS</p>
+
       </div>
-      
+
+
+
     </div>
+
     <div class="hero-copy">
+
       <h1>People<br><em>at HOPE Lab.</em></h1>
+
       <p class="hero-description">Meet the principal investigator, researchers, students and alumni contributing to the scientific activities of HOPE Lab.</p>
+
     </div>
+
   </div>
+
 </section>
+
 <section class="section people-pi-section"><div class="site-shell"><div class="section-heading"><div><h2>Principal Investigator</h2></div></div><article class="pi-profile-card"><div class="pi-profile-mark"><strong>TJH</strong><small>PI, HOPE Lab, CU</small></div><div class="pi-profile-content"><h3>Dr. Tanim Jabid Hossain</h3><p class="pi-role">Associate Professor · Founder &amp; Principal Investigator</p><p>Dr. Tanim Jabid Hossain is an Associate Professor in the Department of Biochemistry and Molecular Biology at the University of Chittagong, Bangladesh, and Founder and Principal Investigator of HOPE Lab. A microbial biochemist, his research focuses on microbial metabolism, glycobiology and functional biomolecules, including N-linked glycans, microbial glycan-processing pathways and bioactive microbial products. He undertook doctoral research through the RIKEN–Saitama University Joint Program in Japan and served as an International Program Associate with RIKEN's Glycometabolome Team from 2012 to 2015. As Founder and Principal Investigator of HOPE Lab, he directs research combining experimental biochemistry and microbiology with genomics, glycomics and metabolomics to investigate microbial biochemical pathways, molecular functions and biological interactions across host, food and environmental systems.</p>
+
 <div class="pi-academic-links pi-academic-links-standalone" aria-label="Academic and professional profiles">
+
   <p class="pi-links-label">ACADEMIC &amp; PROFESSIONAL PROFILES</p>
+
   <div class="pi-profile-links">
+
     <a class="profile-icon-link" href="https://orcid.org/0000-0002-0978-2657" target="_blank" rel="noopener noreferrer" aria-label="ORCID" title="ORCID">
+
       <svg class="profile-icon-svg" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#A6CE39"/><text x="20" y="27" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">iD</text></svg>
+
     </a>
+
     <a class="profile-icon-link" href="https://scholar.google.co.jp/citations?hl=en&amp;user=uh9CW7QAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+
       <svg class="profile-icon-svg" viewBox="0 0 40 40" aria-hidden="true"><path d="M3 15.5 20 6l17 9.5L20 25 3 15.5Z" fill="#4285F4"/><path d="M9.5 20.2v8.1c5.8 4.6 15.2 4.6 21 0v-8.1L20 26.1 9.5 20.2Z" fill="#4285F4"/><path d="M36 16v10" stroke="#4285F4" stroke-width="2.6" stroke-linecap="round"/><circle cx="36" cy="28.5" r="2" fill="#4285F4"/></svg>
+
     </a>
+
     <a class="profile-icon-link" href="https://www.researchgate.net/profile/Tanim-Hossain" target="_blank" rel="noopener noreferrer" aria-label="ResearchGate" title="ResearchGate">
+
       <svg class="profile-icon-svg" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#00CCBB"/><path d="M11 29V11h8.1c5.2 0 8.1 2.4 8.1 6.5 0 2.8-1.5 4.8-4.1 5.8l5 5.7h-5.4l-4.3-5.1h-2.8V29H11Zm4.6-8.9h3.3c2.4 0 3.6-.8 3.6-2.5s-1.2-2.5-3.6-2.5h-3.3v5Z" fill="#fff"/></svg>
+
     </a>
+
     <a class="profile-icon-link" href="https://www.linkedin.com/in/tanim-jabid-hossain" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+
       <svg class="profile-icon-svg" viewBox="0 0 40 40" aria-hidden="true"><rect x="1" y="1" width="38" height="38" rx="7" fill="#0A66C2"/><circle cx="11.5" cy="13" r="2.3" fill="#fff"/><path d="M9.4 17h4.2v13H9.4zM17 17h4v1.8c.8-1.3 2.1-2.1 4.1-2.1 3.6 0 5.5 2.3 5.5 6.3V30h-4.2v-6.2c0-2-.7-3.1-2.5-3.1-1.9 0-2.8 1.3-2.8 3.5V30H17V17Z" fill="#fff"/></svg>
+
     </a>
+
   </div>
+
 </div>
-<section class="academic-metrics" aria-labelledby="academic-metrics-title">
+
+</div>
+<section class="academic-metrics pi-academic-metrics" aria-labelledby="academic-metrics-title">
+
   <div class="academic-metrics-heading">
+
     <div><h4 id="academic-metrics-title">Academic metrics</h4></div>
+
   </div>
+
   <div class="metrics-grid pi-metrics-grid">
+
     <div class="metric-item"><strong>30</strong><span>Publications</span></div>
+
     <div class="metric-item"><strong>~1.4K</strong><span>Citations</span></div>
+
     <div class="metric-item"><strong>15</strong><span>h-index</span></div>
+
     <div class="metric-item"><strong>18</strong><span>i10-index</span></div>
+
   </div>
+
   <p class="metrics-note">Figures are manually maintained from the PI's Google Scholar profile. Last updated: 6 November 2026.</p>
+
   <a class="metrics-link" href="https://scholar.google.co.jp/citations?hl=en&amp;user=uh9CW7QAAAAJ" target="_blank" rel="noopener noreferrer">View Google Scholar profile ↗</a>
+
 </section>
-</div></article></div></section>
+</article>
+</div></section>
+
 <section class="section people-group-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">HOPE LAB MEMBERS</p><h2>Research Assistants</h2></div><span class="people-count">04 MEMBERS</span></div><div class="people-grid people-pairs"><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AA</span><div><h3>Asif Mahmud Antar</h3><p>Postgraduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">AS</span><div><h3>Abrar Faiyaz Shihab</h3><p>Postgraduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">FN</span><div><h3>Foujea Afrin Nipa</h3><p>Postgraduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">MT</span><div><h3>Musfika Akhter Turna</h3><p>Postgraduate student</p></div></article></div></div></div></section><section class="section people-group-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">HOPE LAB MEMBERS</p><h2>Research Students</h2></div><span class="people-count">05 MEMBERS</span></div><div class="people-grid people-pairs"><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">RJ</span><div><h3>Rahatul Jannat</h3><p>Graduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">TI</span><div><h3>Tahjib Islam</h3><p>Graduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AA</span><div><h3>Aurgha Acharjee</h3><p>Graduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">SA</span><div><h3>Samia Akter</h3><p>Graduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AQ</span><div><h3>Azmir Arif Al Quraishi</h3><p>Graduate student</p></div></article></div></div></div></section><section class="section people-group-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">HOPE LAB MEMBERS</p><h2>Trainees</h2></div><span class="people-count">03 MEMBERS</span></div><div class="people-grid people-pairs"><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">SF</span><div><h3>Shafiullah Al Fahad</h3><p>Undergraduate student</p></div></article><article class="person-card"><span class="person-marker" aria-hidden="true">PG</span><div><h3>Prome Ghosh</h3><p>Undergraduate student</p></div></article></div><div class="people-pair"><article class="person-card"><span class="person-marker" aria-hidden="true">AR</span><div><h3>Antara Raisa</h3><p>Undergraduate student</p></div></article></div></div></div></section>
+
 <section class="section alumni-section"><div class="site-shell"><div class="section-heading"><div><p class="eyebrow">FORMER MEMBERS</p><h2>Alumni</h2><p class="section-subtitle">HOPE Lab acknowledges former members who contributed to its research activities.</p><p class="section-note alumni-updated">Affiliations and positions reflect information available to HOPE Lab and were last reviewed in 2026.</p></div></div><div class="people-grid alumni-grid"><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">IF</span><div><h3>Ibrahim Khalil Faisal</h3><p>Currently Biochemist, Ibne Sina Diagnostics.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">IN</span><div><h3>Iqbal Hossain Nafiz</h3><p>Currently PhD researcher at the Korea Institute of Science and Technology.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">JS</span><div><h3>Jasmin Sultana</h3><p>Alumna.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">KA</span><div><h3>Khadiza Akter</h3><p>Currently Assistant Teacher.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MM</span><div><h3>Mahzabeen Muntaha</h3><p>Currently Assistant Teacher.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MC</span><div><h3>Mohammad Nazmul Ahmed Chowdhury</h3><p>Currently BCS-cadre college teacher (gazetted).</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MB</span><div><h3>Mohammed Sajjad Hossain Bappi</h3><p>Currently PhD researcher at The Ohio State University, United States.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MK</span><div><h3>Md. Sajib Khan</h3><p>Currently Research Fellow at the National Institute of Biotechnology (NIB).</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">MD</span><div><h3>Mukta Das</h3><p>Currently Lecturer, CMP College.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">RI</span><div><h3>Raihanul Islam</h3><p>Currently Biochemist at Popular Diagnostics.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">SZ</span><div><h3>Subrina Akter Zedny</h3><p>Currently PhD researcher at the University of Adelaide, Australia.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">SC</span><div><h3>Sumaiya Islam Chowdhury</h3><p>Currently Scientific Officer, BCSIR.</p></div></article><article class="person-card alumni-card"><span class="person-marker" aria-hidden="true">TR</span><div><h3>Tanjilur Rahman</h3><p>Currently PhD researcher at the University of Queensland, Australia.</p></div></article></div></div></section>
+
 <section class="section opportunities-section" id="prospective-students"><div class="site-shell opportunities-inner"><div><p class="eyebrow">PEOPLE AND OPPORTUNITIES</p><h2>Student Research Opportunities</h2><p>Students interested in research in microbial biochemistry, biotechnology, probiotics, functional biomolecules, genomics, and related fields are welcome to inquire about opportunities. We encourage students to have a genuine reason for pursuing research and a clear idea of how the experience may contribute to achieve their life goal. Opportunities depend on ongoing projects, available supervision, and laboratory capacity. Integrity, responsibility, and a willingness to learn are essential.</p></div><a class="button button-primary" href="./contact.html">Contact HOPE Lab <span aria-hidden="true">↗</span></a></div></section></main>
+
 <footer class="site-footer">
+
   <div class="site-shell footer-grid">
+
     <div class="footer-identity">
+
       <h2 class="footer-identity-title">HOPE Lab</h2>
+
       <p>Faculty of Biological Sciences, Department of Biochemistry and Molecular Biology, University of Chittagong, Bangladesh</p>
+
       <p class="footer-keywords">One Health · Microbial Biochemistry · Sustainable Biotechnology</p>
+
     </div>
+
     <div class="footer-col"><h2>Research</h2><a href="./protocols.html">Protocols &amp; Resources</a><a href="./research.html">Research areas</a><a href="./research.html#discovery-to-impact">Discovery to Impact</a><a href="./publications.html">Publications</a><a href="./publications.html#preprints">Preprints</a></div>
-    <div class="footer-col"><h2>People &amp; Opportunities</h2><a href="./people.html">Lab members</a><a href="./people.html#prospective-students">Student research opportunities</a><a href="./contact.html">Contact</a></div>
+
+    <div class="footer-col"><h2>People & Opportunities</h2><a href="./people.html">Lab members</a><a href="./people.html#prospective-students">Student research opportunities</a><a href="./contact.html">Contact</a></div>
+
     <div class="footer-col"><h2>Connect</h2><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a class="social-footer-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer">HOPE Lab on LinkedIn ↗</a><a class="social-footer-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer">HOPE Lab on Facebook ↗</a><a href="https://sites.google.com/view/hope-lab" target="_blank" rel="noopener noreferrer">English Google Sites website ↗</a><a href="https://sites.google.com/view/hope-research" target="_blank" rel="noopener noreferrer">বাংলা ওয়েবসাইট ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">University location ↗</a></div>
+
   </div>
+
   <div class="site-shell footer-bottom"><span>© <span id="current-year">2026</span> Laboratory for Health, Omics and Pathway Exploration (HOPE Lab)</span><span>University of Chittagong</span></div>
+
 </footer>
+
 <script src="./assets/js/site.js" defer></script>
+
 </body>
+
 </html>

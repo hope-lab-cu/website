@@ -36,9 +36,9 @@
     socialLinks.className = 'floating-social-links';
     socialLinks.setAttribute('aria-label', 'HOPE Lab social links');
     socialLinks.innerHTML = `
-      <a class="floating-social-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer" aria-label="HOPE Lab on Facebook" title="Facebook">f</a>
-      <a class="floating-social-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer" aria-label="HOPE Lab on LinkedIn" title="LinkedIn">in</a>
-      <a class="floating-social-link" href="mailto:hopelab.science@gmail.com" aria-label="Email HOPE Lab" title="Email">e</a>
+      <a class="floating-social-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer" aria-label="HOPE Lab on Facebook" data-tooltip="Visit our Facebook page">f</a>
+      <a class="floating-social-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer" aria-label="HOPE Lab on LinkedIn" data-tooltip="Connect with us on LinkedIn">in</a>
+      <a class="floating-social-link" href="mailto:hopelab.science@gmail.com" aria-label="Email HOPE Lab" data-tooltip="Email HOPE Lab">e</a>
     `;
     document.body.appendChild(socialLinks);
   }

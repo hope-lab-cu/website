@@ -113,7 +113,7 @@ a,button { -webkit-tap-highlight-color: transparent; }
 .home-doi a:hover { color:var(--accent); text-decoration:underline; }
 .pub-index-arrow { color:var(--accent); }
 .paper-stat-band { display:grid; grid-template-columns:135px minmax(0,1fr) auto; align-items:center; gap:22px; margin-top:31px; padding:27px 29px; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface-2); }
-.paper-stat-number { color:var(--accent); font:750 clamp(3rem,5vw,4.6rem)/.95 var(--display); letter-spacing:-.07em; }
+.paper-stat-number { color:var(--accent); font:400 clamp(3rem,5vw,4.6rem)/.95 var(--display); letter-spacing:-.07em; }
 .paper-stat-copy .eyebrow { margin-bottom:6px; }
 .paper-stat-copy h3 { margin:0 0 7px; font:700 1.35rem var(--display); }
 .paper-stat-copy p:last-child { margin:0; color:var(--muted); font-size:.86rem; }
@@ -872,8 +872,10 @@ a.publication-mark:hover { color: var(--accent); transform: translate(2px, -2px)
 .metrics-link:hover { text-decoration:underline; }
 /* Three compact, fixed social and email links. */
 .floating-social-links { position:fixed; right:20px; bottom:20px; z-index:35; display:flex; flex-direction:column; align-items:center; gap:8px; }
-.floating-social-link { display:grid; place-items:center; width:42px; height:42px; border:1px solid #C9DDE4; border-radius:10px; background:#EDF6F9; color:#287C92; box-shadow:0 8px 24px rgba(20,48,56,.15); font:800 .9rem/1 Arial,sans-serif; text-decoration:none; transition:transform .18s ease,box-shadow .18s ease; }
+.floating-social-link { position:relative; display:grid; place-items:center; width:42px; height:42px; border:1px solid #C9DDE4; border-radius:10px; background:#EDF6F9; color:#287C92; box-shadow:0 8px 24px rgba(20,48,56,.15); font:800 .9rem/1 Arial,sans-serif; text-decoration:none; transition:transform .18s ease,box-shadow .18s ease; }
+.floating-social-link::after { position:absolute; top:50%; right:calc(100% + 10px); padding:7px 10px; border-radius:7px; background:var(--text); color:#fff; content:attr(data-tooltip); font:600 .76rem/1.3 var(--body); white-space:nowrap; pointer-events:none; opacity:0; visibility:hidden; transform:translate(4px,-50%); transition:opacity .16s ease,transform .16s ease,visibility .16s ease; }
 .floating-social-link:hover { color:#287C92; transform:translateY(-2px); box-shadow:0 10px 26px rgba(20,48,56,.19); }
+.floating-social-link:hover::after,.floating-social-link:focus-visible::after { opacity:1; visibility:visible; transform:translate(0,-50%); }
 .floating-social-link:focus-visible { outline:3px solid #287C92; outline-offset:3px; }
 @media (max-width:560px) {
   .floating-social-links { right:12px; bottom:12px; gap:7px; }

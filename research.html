@@ -115,6 +115,84 @@
     }
   </style>
 
+  <style id="research-activities-layout">
+    /* A compact, responsive gallery for documented HOPE Lab research activities. */
+    #research-activities {
+      background: var(--surface-2);
+      border-top: 1px solid var(--line);
+    }
+    #research-activities .section-heading {
+      margin-bottom: 28px;
+    }
+    #research-activities .activities-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: stretch;
+      gap: 18px;
+    }
+    #research-activities .activity-figure {
+      min-width: 0;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    #research-activities .activity-figure img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+    #research-activities .activity-figure:hover img {
+      transform: scale(1.015);
+    }
+    #research-activities .activity-fieldwork {
+      grid-column: 1 / -1;
+    }
+    #research-activities .activity-fieldwork img {
+      height: clamp(140px, 18vw, 220px);
+      object-position: center 55%;
+    }
+    #research-activities .activity-agar img {
+      aspect-ratio: 16 / 10;
+      height: auto;
+    }
+    #research-activities figcaption {
+      padding: 16px 19px 18px;
+      border-top: 1px solid var(--line);
+    }
+    #research-activities figcaption h3 {
+      margin: 0 0 5px;
+      font: 700 1.02rem/1.35 var(--display);
+      letter-spacing: -.02em;
+    }
+    #research-activities figcaption p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.65;
+    }
+    @media (max-width: 700px) {
+      #research-activities .activities-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+      }
+      #research-activities .activity-fieldwork img {
+        height: clamp(120px, 31vw, 175px);
+      }
+      #research-activities figcaption {
+        padding: 15px 17px 16px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #research-activities .activity-figure img {
+        transition: none;
+      }
+    }
+  </style>
+
   <meta property="og:site_name" content="HOPE Lab">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Research | Microbial Biochemistry &amp; Omics | HOPE Lab">
@@ -179,6 +257,40 @@ We use genomics, glycomics, and metabolomics, supported by bioinformatics, to in
 These complementary approaches help reveal molecular features associated with adaptation, capabilities, and biological activity, providing insights that can guide further experimental research and the investigation of potential biotechnological applications.</p><ul class="theme-tags"><li>Genomics and comparative genome analysis</li><li>Glycomics and molecular structures</li><li>Metabolomics and biochemical profiles</li><li>Bioinformatics and functional interpretation</li></ul></div></article><article class="theme-row" id="ecology-and-interactions"><div class="theme-heading"><div><h3>Ecology and Environmental Interactions</h3></div></div><div class="theme-content"><p>Biological functions are shaped by the environments in which organisms live and by their interactions with other organisms.
 We investigate microbial communities and adaptation across fermented foods, host-associated environments, plant-associated niches, extreme habitats, and polluted environments.
 This work examines how ecological conditions influence microbial persistence, biological activity, and potential relevance to health, agriculture, food systems, and environmental management.</p><ul class="theme-tags"><li>Microbial communities and ecological relationships</li><li>Plant-associated and host-associated niches</li><li>Extremophiles and environmental adaptation</li><li>Polluted environments and bioremediation</li></ul></div></article></div></div></section>
+<section class="section research-activities-section" id="research-activities" aria-labelledby="research-activities-heading">
+  <div class="site-shell">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">RESEARCH IN ACTION</p>
+        <h2 id="research-activities-heading">Research Activities</h2>
+        <p class="section-subtitle">From environmental fieldwork to laboratory-based microbial investigations, our research brings together sample collection, culture-based observations, and experimental work.</p>
+      </div>
+    </div>
+    <div class="activities-grid">
+      <figure class="activity-figure activity-fieldwork">
+        <img src="./assets/images/hope-lab-environmental-sample-tube-fieldwork.jpg" alt="Test tube positioned in soil among grass during environmental fieldwork" loading="lazy" decoding="async">
+        <figcaption>
+          <h3>Environmental Fieldwork</h3>
+          <p>Field-based observation and sample collection in environmental settings.</p>
+        </figcaption>
+      </figure>
+      <figure class="activity-figure activity-agar">
+        <img src="./assets/images/hope-lab-agar-plate-observation.jpg" alt="Agar plate held by hand for observation of microbial cultures" loading="lazy" decoding="async">
+        <figcaption>
+          <h3>Microbial Culture Observation</h3>
+          <p>Examining agar plates to observe microbial growth and colony characteristics.</p>
+        </figcaption>
+      </figure>
+      <figure class="activity-figure activity-agar">
+        <img src="./assets/images/hope-lab-agar-plate-streaking.jpg" alt="Agar plate being streaked during microbial culture work" loading="lazy" decoding="async">
+        <figcaption>
+          <h3>Microbial Isolation and Culture</h3>
+          <p>Agar plate streaking as part of routine microbial isolation and culture work.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 <section class="section context-section"><div class="site-shell context-grid"><div><p class="eyebrow">A BROADER BIOLOGICAL CONTEXT</p><h2>Bringing biological discovery into context</h2></div><div><p>Biological functions are shaped not only by molecular mechanisms but also by the interactions between organisms and their surrounding environments.
 Across these research areas, HOPE Lab seeks to understand the biochemical mechanisms, molecular features, and ecological interactions underlying biological functions. We combine experimental biochemistry and microbiology with genomic, molecular, and computational approaches to investigate biological questions from different perspectives.
 Our findings seek to provide a foundation for further research into functional biomolecules, beneficial microorganisms, microbial risks, and environmentally relevant biological processes.

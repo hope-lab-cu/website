@@ -12,6 +12,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* One Health introduction: text and diagram share a compact, responsive row. */
+    .one-health-intro-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+      align-items: center;
+      gap: clamp(1.25rem, 3vw, 2.5rem);
+      width: 100%;
+    }
+    .one-health-intro-copy { min-width: 0; }
+    .one-health-diagram {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 0 0 auto;
+      padding: clamp(6px, 1vw, 10px);
+      background: #fff;
+      border: 1px solid #e4ecee;
+      border-radius: 16px;
+      box-shadow: 0 8px 26px rgba(25, 55, 65, .055);
+    }
+    .one-health-diagram img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    @media (max-width: 760px) {
+      .one-health-intro-layout { grid-template-columns: minmax(0, 1fr); }
+      .one-health-diagram {
+        max-width: 560px;
+        margin: .25rem auto 0;
+      }
+    }
+
+    /* Match the secondary publication button while retaining the existing label and link. */
+    .research-output-button {
+      color: #287C92;
+      background: #fff;
+      border: 1px solid #dce7ea;
+    }
+
+    /* Align the PI-section link to the right edge of its text column. */
+    .pi-copy > .discover-link {
+      display: table;
+      margin-left: auto;
+    }
+  </style>
 
   <meta property="og:site_name" content="HOPE Lab">
   <meta property="og:type" content="website">
@@ -111,7 +159,18 @@
 </section>
 <section class="section framework-section carbon-section" id="framework">
   <div class="site-shell">
-    <div class="carbon-section-head"><div><p class="eyebrow prominent-eyebrow">THE HOPE LAB RESEARCH FRAMEWORK</p><h2>A One Health Approach</h2><p class="section-subtitle">HOPE Lab takes a One Health approach, exploring how biochemical pathways and molecular processes across microbial and other biological systems connect human, animal, plant, and environmental health. The 1H → 2O → 3P → 4E framework organizes our research across four complementary dimensions, spanning interconnected health systems, biological functions, ecological interactions, and environmental sustainability.</p></div></div>
+    <div class="carbon-section-head">
+      <div class="one-health-intro-layout">
+        <div class="one-health-intro-copy">
+          <p class="eyebrow prominent-eyebrow">THE HOPE LAB RESEARCH FRAMEWORK</p>
+          <h2>A One Health Approach</h2>
+          <p class="section-subtitle">HOPE Lab takes a One Health approach to investigating how microorganisms, their biochemical pathways, and their interactions influence human, animal, plant, and environmental health. Through microbial biochemistry and omics-based approaches, the laboratory examines the molecular processes and biological functions underlying these connections. The 1H → 2O → 3P → 4E framework organizes our research across four complementary dimensions, spanning interconnected health systems, biological functions, ecological interactions, and environmental sustainability.</p>
+        </div>
+        <figure class="one-health-diagram">
+          <img src="./assets/images/one-health-microbial-biochemistry.png" alt="Conceptual diagram showing how microbes and biochemical pathways connect human, animal, plant, and environmental health." width="1672" height="941" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </div>
     <div class="carbon-framework-grid"><article class="carbon-step tone-one"><span class="step-code">1H</span><h3>One Health</h3><strong>Interconnected Health Systems</strong><p>Understanding biological factors connecting human, animal, plant, and environmental health.</p></article><article class="carbon-step tone-two"><span class="step-code">2O</span><h3>Organisms · Omics</h3><strong>Molecular investigation</strong><p>Investigating organisms and their molecular profiles using genomics, glycomics, and metabolomics.</p></article><article class="carbon-step tone-three"><span class="step-code">3P</span><h3>Pathways · Probiotics · Protection</h3><strong>Biological functions</strong><p>Exploring microbial products, biochemical pathways, and their potential applications.</p></article><article class="carbon-step tone-four"><span class="step-code">4E</span><h3>Ecology · Environment · Evolution · Emergence</h3><strong>Ecological interactions and sustainability</strong><p>Understanding ecology, adaptation, and function in different environments.</p></article></div>
   </div>
 </section>
@@ -119,7 +178,7 @@
   <div class="site-shell">
     <div class="section-heading output-heading"><div><p class="eyebrow prominent-eyebrow">RESEARCH OUTPUT</p><h2>Publications and Contributions</h2></div></div>
     
-    <div class="paper-stat-band"><div class="paper-stat-number">23</div><div class="paper-stat-copy"><h3>Peer-Reviewed Papers</h3><p>Explore 23 peer-reviewed papers, four preprints, and one accepted book chapter by HOPE Lab members across microbial biochemistry, probiotics, functional biomolecules, genomics, glycobiology, and environmental biotechnology.</p></div><a class="button button-primary" href="./publications.html">View research output <span aria-hidden="true">↗</span></a></div>
+    <div class="paper-stat-band"><div class="paper-stat-number">23</div><div class="paper-stat-copy"><h3>Peer-Reviewed Papers</h3><p>Explore 23 peer-reviewed papers, four preprints, and one accepted book chapter by HOPE Lab members across microbial biochemistry, probiotics, functional biomolecules, genomics, glycobiology, and environmental biotechnology.</p></div><a class="button button-secondary research-output-button" href="./publications.html">View research output <span aria-hidden="true">↗</span></a></div>
     <div class="output-intro"><p class="section-subtitle">Selected research contributions from HOPE Lab members and collaborators.</p></div>
     <div class="recent-publications"><div class="recent-kicker"><span>RECENT PUBLICATIONS</span><span>SELECTED / 2026</span></div><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Multifunctional lactic acid bacteria from sugarcane juice with probiotic properties for gut adaptation, health benefits, food preservation and quality enhancement</h3><p class="home-journal">Scientific Reports</p><p class="home-doi"><a href="https://doi.org/10.1038/s41598-026-40844-5" target="_blank" rel="noopener noreferrer">DOI: 10.1038/s41598-026-40844-5</a></p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Comparative evaluation of different sol–gel processed M-type barium hexaferrite on structural and antimicrobial efficacy</h3><p class="home-journal">Next Bioengineering</p><p class="home-doi"><a href="https://doi.org/10.1016/j.nxbio.2026.100047" target="_blank" rel="noopener noreferrer">DOI: 10.1016/j.nxbio.2026.100047</a></p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Functional and transcriptomic analyses in Neurospora crassa reveal a crucial role for the N-glycoprotein deglycosylation process in fungal homeostasis</h3><p class="home-journal">The FEBS Journal</p><p class="home-doi"><a href="https://doi.org/10.1111/febs.70666" target="_blank" rel="noopener noreferrer">DOI: 10.1111/febs.70666</a></p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article></div>
     <div class="publications-more"><a class="subtle-link" href="./publications.html">Explore publications <span aria-hidden="true">↗</span></a></div>

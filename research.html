@@ -139,20 +139,15 @@
     .research-activities-section .research-activity-image {
       display: block;
       width: 100%;
+      aspect-ratio: 4 / 3;
       overflow: hidden;
       background: #f3f7f8;
     }
     .research-activities-section .research-activity-image img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
       object-fit: cover;
-    }
-    .research-activities-section .research-activity-card--standard .research-activity-image img {
-      aspect-ratio: 4 / 3;
-    }
-    .research-activities-section .research-activity-card--panorama .research-activity-image img {
-      aspect-ratio: 16 / 7;
     }
     .research-activities-section .research-activity-copy {
       padding: 17px 18px 19px;
@@ -173,17 +168,11 @@
       .research-activities-section .research-activities-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
-      .research-activities-section .research-activity-card--panorama {
-        grid-column: 1 / -1;
-      }
     }
     @media (max-width: 620px) {
       .research-activities-section .research-activities-grid {
         grid-template-columns: minmax(0, 1fr);
         gap: 16px;
-      }
-      .research-activities-section .research-activity-card--panorama {
-        grid-column: auto;
       }
       .research-activities-section .research-activity-copy {
         padding: 15px 16px 17px;
@@ -270,40 +259,40 @@ Through this work, we aim to advance fundamental understanding while exploring e
     </div>
     <p class="research-activities-intro">Representative images of experimental and field-based activities supporting research in microbial biochemistry, microbiology, and environmental interactions.</p>
     <div class="research-activities-grid">
-      <figure class="research-activity-card research-activity-card--standard">
+      <figure class="research-activity-card">
         <div class="research-activity-image">
-          <img src="./assets/images/hope-lab-agar-plate-held-by-researcher.jpg" alt="A researcher holding an agar plate for culture observation at HOPE Lab" loading="lazy" decoding="async">
+          <img src="./assets/images/hope-lab-agar-plate-held-by-researcher.jpg" alt="A researcher holding an agar plate for culture observation" loading="lazy" decoding="async">
         </div>
         <figcaption class="research-activity-copy">
           <h3>Agar Plate Observation</h3>
-          <p>Examining colonies grown on agar media and observing their visible characteristics as part of culture-based laboratory work.</p>
+          <p>Observing colony growth and visible characteristics on agar media during culture-based laboratory investigations.</p>
         </figcaption>
       </figure>
-      <figure class="research-activity-card research-activity-card--panorama">
+      <figure class="research-activity-card">
         <div class="research-activity-image">
-          <img src="./assets/images/hope-lab-soil-test-tube-field-study.jpg" alt="A test tube positioned in soil among grass, illustrating an environmental research setting" loading="lazy" decoding="async">
+          <img src="./assets/images/hope-lab-soil-test-tube-field-study.jpg" alt="A test tube placed in soil among grass in an environmental setting" loading="lazy" decoding="async">
         </div>
         <figcaption class="research-activity-copy">
-          <h3>Environmental Research</h3>
-          <p>Considering soil and surrounding environmental conditions when investigating biological activity beyond the laboratory.</p>
+          <h3>Environmental Fieldwork</h3>
+          <p>Considering soil and surrounding conditions when studying biological activity in natural and managed environments.</p>
         </figcaption>
       </figure>
-      <figure class="research-activity-card research-activity-card--standard">
+      <figure class="research-activity-card">
         <div class="research-activity-image">
-          <img src="./assets/images/hope-lab-agar-plate-streaking.jpg" alt="An agar plate being streaked during culture-based laboratory work at HOPE Lab" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="research-activity-copy">
-          <h3>Agar Plate Streaking</h3>
-          <p>Applying a streaking pattern to agar media to separate growth and obtain distinct colonies for further examination.</p>
-        </figcaption>
-      </figure>
-      <figure class="research-activity-card research-activity-card--standard">
-        <div class="research-activity-image">
-          <img src="./assets/images/hope-lab-pipetting-sample-microcentrifuge-tube.jpg" alt="Gloved hands pipetting a sample into a microcentrifuge tube during laboratory sample preparation" loading="lazy" decoding="async">
+          <img src="./assets/images/hope-lab-pipetting-sample-microcentrifuge-tube.jpg" alt="Gloved hands pipetting a sample into a microcentrifuge tube" loading="lazy" decoding="async">
         </div>
         <figcaption class="research-activity-copy">
           <h3>Sample Preparation</h3>
-          <p>Transferring a measured sample into a microcentrifuge tube as part of routine preparation for biochemical and molecular investigations.</p>
+          <p>Preparing measured samples in microcentrifuge tubes for subsequent biochemical and molecular analyses.</p>
+        </figcaption>
+      </figure>
+      <figure class="research-activity-card">
+        <div class="research-activity-image">
+          <img src="./assets/images/hope-lab-agar-plate-streaking.jpg" alt="An agar plate being streaked during laboratory work" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="research-activity-copy">
+          <h3>Agar Plate Streaking</h3>
+          <p>Streaking agar media to obtain well-separated colonies for further observation and study.</p>
         </figcaption>
       </figure>
     </div>

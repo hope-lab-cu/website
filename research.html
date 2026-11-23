@@ -123,7 +123,7 @@
     }
     .research-activities-section .research-activities-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1.18fr) minmax(0, 1fr);
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       align-items: start;
       gap: 20px;
     }
@@ -152,7 +152,7 @@
       aspect-ratio: 4 / 3;
     }
     .research-activities-section .research-activity-card--panorama .research-activity-image img {
-      aspect-ratio: auto;
+      aspect-ratio: 16 / 7;
     }
     .research-activities-section .research-activity-copy {
       padding: 17px 18px 19px;
@@ -272,11 +272,11 @@ Through this work, we aim to advance fundamental understanding while exploring e
     <div class="research-activities-grid">
       <figure class="research-activity-card research-activity-card--standard">
         <div class="research-activity-image">
-          <img src="./assets/images/hope-lab-agar-plate-held-by-researcher.jpg" alt="A researcher holding an agar plate for microbial culture observation at HOPE Lab" loading="lazy" decoding="async">
+          <img src="./assets/images/hope-lab-agar-plate-held-by-researcher.jpg" alt="A researcher holding an agar plate for culture observation at HOPE Lab" loading="lazy" decoding="async">
         </div>
         <figcaption class="research-activity-copy">
-          <h3>Microbial Culture Observation</h3>
-          <p>Observing microbial growth and colony characteristics on agar media.</p>
+          <h3>Agar Plate Observation</h3>
+          <p>Examining colonies grown on agar media and observing their visible characteristics as part of culture-based laboratory work.</p>
         </figcaption>
       </figure>
       <figure class="research-activity-card research-activity-card--panorama">
@@ -284,17 +284,26 @@ Through this work, we aim to advance fundamental understanding while exploring e
           <img src="./assets/images/hope-lab-soil-test-tube-field-study.jpg" alt="A test tube positioned in soil among grass, illustrating an environmental research setting" loading="lazy" decoding="async">
         </div>
         <figcaption class="research-activity-copy">
-          <h3>Environmental Research Context</h3>
-          <p>Exploring microbial research in relation to soil and surrounding environmental conditions.</p>
+          <h3>Environmental Research</h3>
+          <p>Considering soil and surrounding environmental conditions when investigating biological activity beyond the laboratory.</p>
         </figcaption>
       </figure>
       <figure class="research-activity-card research-activity-card--standard">
         <div class="research-activity-image">
-          <img src="./assets/images/hope-lab-agar-plate-streaking.jpg" alt="An agar plate being streaked during culture-based microbial work at HOPE Lab" loading="lazy" decoding="async">
+          <img src="./assets/images/hope-lab-agar-plate-streaking.jpg" alt="An agar plate being streaked during culture-based laboratory work at HOPE Lab" loading="lazy" decoding="async">
         </div>
         <figcaption class="research-activity-copy">
-          <h3>Culture-Based Investigation</h3>
-          <p>Agar plate streaking as part of microbial culture-based investigations.</p>
+          <h3>Agar Plate Streaking</h3>
+          <p>Applying a streaking pattern to agar media to separate growth and obtain distinct colonies for further examination.</p>
+        </figcaption>
+      </figure>
+      <figure class="research-activity-card research-activity-card--standard">
+        <div class="research-activity-image">
+          <img src="./assets/images/hope-lab-pipetting-sample-microcentrifuge-tube.jpg" alt="Gloved hands pipetting a sample into a microcentrifuge tube during laboratory sample preparation" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="research-activity-copy">
+          <h3>Sample Preparation</h3>
+          <p>Transferring a measured sample into a microcentrifuge tube as part of routine preparation for biochemical and molecular investigations.</p>
         </figcaption>
       </figure>
     </div>

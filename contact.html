@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact HOPE Lab at the Department of Biochemistry and Molecular Biology, University of Chittagong, for research questions, scientific discussions and potential collaborations.">
+  <meta name="description" content="Research enquiries and selected research support capabilities at HOPE Lab, University of Chittagong, including microbial genome annotation, functional genomics, antimicrobial screening, MIC assessment and bioactivity analysis.">
   <meta name="theme-color" content="#f7fbfd">
-  <title>Contact | HOPE Lab, University of Chittagong</title>
+  <title>Research Enquiries &amp; Support | HOPE Lab, University of Chittagong</title>
   <link rel="canonical" href="https://cu.ac.bd/hope-lab/contact.html">
   <link rel="icon" href="./assets/images/hope-lab-symbol.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,12 +24,155 @@
       line-height: 1.7;
     }
     .contact-card .contact-methods a:not(.contact-card-link):hover { color: var(--accent-2); }
+
+
+    /* Contact page: research capabilities and responsible technical support. */
+    .contact-capabilities-section,
+    .contact-integrity-section {
+      padding-block: clamp(3.25rem, 6vw, 5.25rem);
+    }
+    .contact-section-heading {
+      max-width: 760px;
+      margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+    }
+    .contact-section-heading h2 {
+      margin: 0 0 .8rem;
+    }
+    .contact-section-heading > p:last-child {
+      max-width: 760px;
+      margin: 0;
+      line-height: 1.75;
+    }
+    .contact-capability-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+    .contact-capability-card {
+      min-width: 0;
+      padding: clamp(1.25rem, 2.4vw, 1.8rem);
+      border: 1px solid #d6e4e8;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .88);
+      box-shadow: 0 7px 22px rgba(25, 65, 80, .055);
+    }
+    .contact-capability-index {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      margin-bottom: 1.15rem;
+      border: 1px solid #cbdde2;
+      border-radius: 11px;
+      color: var(--accent, #245f6b);
+      background: #f0f6f7;
+      font-family: var(--heading, inherit);
+      font-size: .86rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+    .contact-capability-card h3 {
+      margin: 0 0 .7rem;
+      color: var(--ink, #183d49);
+      font-family: var(--heading, inherit);
+      font-size: clamp(1.02rem, 1.45vw, 1.18rem);
+      line-height: 1.42;
+    }
+    .contact-capability-card p {
+      margin: 0 0 .85rem;
+      color: var(--muted, #526b73);
+      font-size: .96rem;
+      line-height: 1.72;
+    }
+    .contact-capability-card ul {
+      display: grid;
+      gap: .48rem;
+      margin: 0;
+      padding: .85rem 0 0 1.1rem;
+      border-top: 1px solid #e2ebee;
+      color: var(--ink, #183d49);
+      font-size: .91rem;
+      line-height: 1.55;
+    }
+    .contact-capability-card li { padding-left: .12rem; }
+    .contact-capability-card li::marker { color: var(--accent, #245f6b); }
+    .contact-scope-note {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      margin-top: 1.35rem;
+      padding: 1rem 1.15rem;
+      border-left: 3px solid var(--accent, #245f6b);
+      border-radius: 0 11px 11px 0;
+      background: #f1f6f7;
+      color: var(--muted, #526b73);
+      font-size: .91rem;
+      line-height: 1.7;
+    }
+    .contact-scope-note strong {
+      color: var(--ink, #183d49);
+      white-space: nowrap;
+    }
+    .contact-integrity-section {
+      background: #f1f6f7;
+      border-top: 1px solid #e0eaed;
+      border-bottom: 1px solid #e0eaed;
+    }
+    .contact-integrity-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .contact-integrity-item {
+      padding-top: 1rem;
+      border-top: 2px solid #c7dce1;
+    }
+    .contact-integrity-item h3 {
+      margin: 0 0 .55rem;
+      color: var(--ink, #183d49);
+      font-family: var(--heading, inherit);
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .contact-integrity-item p {
+      margin: 0;
+      color: var(--muted, #526b73);
+      font-size: .93rem;
+      line-height: 1.72;
+    }
+    .contact-accountability-note {
+      margin: 1.5rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid #d5e3e7;
+      color: var(--muted, #526b73);
+      font-size: .92rem;
+      line-height: 1.75;
+    }
+    .contact-accountability-note strong { color: var(--ink, #183d49); }
+    .contact-cta-section { padding-block: clamp(2.75rem, 5vw, 4.5rem); }
+    .contact-cta-band { gap: 1.5rem; }
+    .contact-cta-band > div { max-width: 760px; }
+    .contact-cta-band p:not(.eyebrow) { max-width: 700px; line-height: 1.72; }
+    @media (max-width: 900px) {
+      .contact-capability-grid,
+      .contact-integrity-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      .contact-capability-grid,
+      .contact-integrity-grid { grid-template-columns: minmax(0, 1fr); }
+      .contact-capability-card { padding: 1.25rem; }
+      .contact-scope-note { display: block; }
+      .contact-scope-note strong { display: block; margin-bottom: .25rem; }
+      .contact-cta-band { align-items: flex-start; }
+    }
   </style>
 
   <meta property="og:site_name" content="HOPE Lab">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Contact | HOPE Lab, University of Chittagong">
-  <meta property="og:description" content="Contact HOPE Lab at the Department of Biochemistry and Molecular Biology, University of Chittagong, for research questions, scientific discussions and potential collaborations.">
+  <meta property="og:title" content="Research Enquiries &amp; Support | HOPE Lab, University of Chittagong">
+  <meta property="og:description" content="Research enquiries and selected research support capabilities at HOPE Lab, University of Chittagong, including microbial genome annotation, functional genomics, antimicrobial screening, MIC assessment and bioactivity analysis.">
   <meta property="og:url" content="https://cu.ac.bd/hope-lab/contact.html">
   <meta property="og:image" content="https://cu.ac.bd/hope-lab/assets/images/HOPE-Lab-Contact-Connect.png">
   <meta property="og:image:alt" content="Illustration representing connections between biological systems and the environment">
@@ -51,25 +194,117 @@
 <main id="main"><section class="hero hero-home site-cover-hero page-cover-hero">
   <div class="site-shell hero-grid">
     <div class="hero-intro">
-      <p class="hero-label">CONNECT WITH HOPE LAB</p>
+      <p class="hero-label">HOPE LAB · UNIVERSITY OF CHITTAGONG</p>
       <div class="hero-visual page-cover-visual">
         <img src="./assets/images/HOPE-Lab-Contact-Connect.png" alt="Illustration representing connections between biological systems and the environment" fetchpriority="high">
-        <p class="visual-caption">SCIENTIFIC DISCUSSION • COLLABORATION • INQUIRIES</p>
+        <p class="visual-caption">MICROBIAL GENOMICS • BIOACTIVITY ASSESSMENT • MICROBIAL BIOCHEMISTRY</p>
       </div>
       
     </div>
     <div class="hero-copy">
-      <h1>Connect<br><em>with us.</em></h1>
-      <p class="hero-description">For research inquiries, academic discussions and potential collaborations, please get in touch with HOPE Lab at the University of Chittagong.</p>
+      <h1>Research enquiries<br><em>&amp; support.</em></h1>
+      <p class="hero-description">HOPE Lab at the University of Chittagong works across microbial genome analysis, functional genomics, antimicrobial assessment and the characterization of bioactive properties. The capabilities outlined below represent selected areas in which the laboratory may contribute to defined research activities.</p>
     </div>
   </div>
 </section>
-<section class="section contact-details-section"><div class="site-shell"><div class="contact-card-grid">
+<section class="section contact-details-section" id="contact-information">
+  <div class="site-shell">
+    <div class="contact-section-heading">
+      <p class="eyebrow">CONTACT INFORMATION</p>
+      <h2>HOPE Lab, University of Chittagong</h2>
+    </div>
+    <div class="contact-card-grid">
   <article class="contact-card"><span class="contact-symbol" aria-hidden="true">@</span><p class="eyebrow">EMAIL</p><h2>Contact us</h2><p class="contact-methods"><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a class="social-footer-link" href="https://www.linkedin.com/company/hope-lab" target="_blank" rel="noopener noreferrer">HOPE Lab on LinkedIn ↗</a><a class="social-footer-link" href="https://www.facebook.com/hopelabscience/" target="_blank" rel="noopener noreferrer">HOPE Lab on Facebook ↗</a></p></article>
-  <article class="contact-card"><span class="contact-symbol" aria-hidden="true">⌖</span><p class="eyebrow">LOCATION</p><h2>University of Chittagong</h2><p>Department of Biochemistry and Molecular Biology, University of Chittagong, Chattogram-4331, Bangladesh.</p><a class="contact-card-link" href="https://www.google.com/maps/search/?api=1&query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">View location ↗</a></article>
+  <article class="contact-card"><span class="contact-symbol" aria-hidden="true">⌖</span><p class="eyebrow">LOCATION</p><h2>University of Chittagong</h2><p>Department of Biochemistry and Molecular Biology, University of Chittagong, Chattogram-4331, Bangladesh.</p><a class="contact-card-link" href="https://www.google.com/maps/search/?api=1&amp;query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">View location ↗</a></article>
   <article class="contact-card"><span class="contact-symbol" aria-hidden="true">◷</span><p class="eyebrow">OFFICE HOURS</p><h2>Sun–Thursday</h2><p>9:00 AM – 3:30 PM<br>Friday–Saturday: Closed</p></article>
-</div></div></section>
-<section class="section contact-cta-section"><div class="site-shell"><div class="contact-cta-band"><div><p class="eyebrow">SCIENTIFIC DISCUSSION &amp; COLLABORATION</p><h2>Have a research question?</h2><p>We welcome scientific discussions and collaborations that bring different perspectives together to advance biological understanding and explore new possibilities.</p></div><a class="button button-primary" href="mailto:hopelab.science@gmail.com">Email HOPE Lab <span aria-hidden="true">↗</span></a></div></div></section></main>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-capabilities-section" id="research-capabilities">
+  <div class="site-shell">
+    <div class="contact-section-heading">
+      <p class="eyebrow">SELECTED RESEARCH CAPABILITIES</p>
+      <h2>Research support</h2>
+      <p>HOPE Lab may contribute selected biochemistry, microbiology, genomics, bioinformatics and laboratory-based components to research projects, subject to scientific fit, methodological suitability, available capacity, required approvals and an agreed scope of work.</p>
+    </div>
+    <div class="contact-capability-grid">
+      <article class="contact-capability-card">
+        <span class="contact-capability-index" aria-hidden="true">01</span>
+        <h3>Microbial genome analysis and functional genomics</h3>
+        <p>Bioinformatic investigation of microbial genome sequence data, from sequence annotation to functional interpretation and comparative analysis.</p>
+        <ul>
+          <li>Microbial genome sequence annotation</li>
+          <li>Gene and functional annotation</li>
+          <li>Comparative genomic and pathway-level analysis</li>
+        </ul>
+      </article>
+      <article class="contact-capability-card">
+        <span class="contact-capability-index" aria-hidden="true">02</span>
+        <h3>Antimicrobial assessment and MIC analysis</h3>
+        <p>In vitro assessment of antimicrobial activity in microbial isolates, extracts and culture-derived preparations, using methods appropriate to the study question.</p>
+        <ul>
+          <li>Antimicrobial activity screening</li>
+          <li>Minimum inhibitory concentration (MIC) assessment</li>
+          <li>Appropriate assay controls and documented procedures</li>
+        </ul>
+      </article>
+      <article class="contact-capability-card">
+        <span class="contact-capability-index" aria-hidden="true">03</span>
+        <h3>Characterization of bioactive properties</h3>
+        <p>Evaluation of selected biological properties in natural extracts, microbial products and culture-derived materials, according to the research context.</p>
+        <ul>
+          <li>Screening of biological extracts</li>
+          <li>Assessment of microbial products and culture supernatants</li>
+          <li>Bioactivity testing with appropriate controls</li>
+        </ul>
+      </article>
+    </div>
+    <div class="contact-scope-note">
+      <strong>Scope and feasibility</strong>
+      <span>These areas describe potential research contributions rather than a standing or guaranteed testing service. Feasibility is assessed individually in relation to the sample or data type, study design, technical requirements, available resources and institutional approvals.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-integrity-section" id="research-integrity">
+  <div class="site-shell">
+    <div class="contact-section-heading">
+      <p class="eyebrow">SCIENTIFIC APPROACH</p>
+      <h2>Methodological transparency and research integrity</h2>
+      <p>HOPE Lab places importance on methodological transparency, traceable records, appropriate controls and evidence-based interpretation. These principles inform our approach to experimental work, data analysis and scientific reporting.</p>
+    </div>
+    <div class="contact-integrity-grid">
+      <article class="contact-integrity-item">
+        <h3>Methodological clarity</h3>
+        <p>Research questions are approached with attention to suitable methods, appropriate controls and the requirements of the specific study.</p>
+      </article>
+      <article class="contact-integrity-item">
+        <h3>Traceable research practice</h3>
+        <p>Attention to sample and data provenance, experimental observations and analytical procedures supports reproducibility and clear interpretation.</p>
+      </article>
+      <article class="contact-integrity-item">
+        <h3>Evidence-based interpretation</h3>
+        <p>Findings are considered in the context of the available evidence, with relevant limitations and uncertainties reflected in scientific reporting.</p>
+      </article>
+    </div>
+    <p class="contact-accountability-note"><strong>Responsible scientific reporting:</strong> We aim to interpret and communicate findings in the context of the methods used and the evidence available, while taking care to acknowledge relevant limitations.</p>
+  </div>
+</section>
+
+<section class="section contact-cta-section">
+  <div class="site-shell">
+    <div class="contact-cta-band">
+      <div>
+        <p class="eyebrow">RESEARCH-RELATED CORRESPONDENCE</p>
+        <h2>Research-related enquiries</h2>
+        <p>For enquiries concerning the research areas outlined above, a brief description of the scientific question and the relevant organism, sample, sequence data or analytical need can help establish whether the topic aligns with the laboratory's current expertise and capacity.</p>
+      </div>
+      <a class="button button-primary" href="mailto:hopelab.science@gmail.com">Email HOPE Lab <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+</main>
 <footer class="site-footer">
   <div class="site-shell footer-grid">
     <div class="footer-identity">
@@ -78,8 +313,8 @@
       <p class="footer-keywords">One Health · Microbial Biochemistry · Sustainable Biotechnology</p>
     </div>
     <div class="footer-col"><h2>Research</h2><a href="./research.html">Research areas</a><a href="./protocols.html">Protocols &amp; Resources</a><a href="./research.html#discovery-to-impact">Discovery to Impact</a><a href="./publications.html">Publications</a><a href="./publications.html#preprints">Preprints</a></div>
-    <div class="footer-col"><h2>People & Opportunities</h2><a href="./people.html">Lab members</a><a href="./people.html#prospective-students">Prospective students</a><a href="./contact.html">Contact</a></div>
-    <div class="footer-col"><h2>Connect</h2><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a href="https://sites.google.com/view/hope-lab" target="_blank" rel="noopener noreferrer">English Google Sites website ↗</a><a href="https://sites.google.com/view/hope-research" target="_blank" rel="noopener noreferrer">বাংলা ওয়েবসাইট ↗</a><a href="https://www.google.com/maps/search/?api=1&query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">University location ↗</a></div>
+    <div class="footer-col"><h2>People &amp; Opportunities</h2><a href="./people.html">Lab members</a><a href="./people.html#prospective-students">Prospective students</a><a href="./contact.html#contact-information">Research enquiries</a></div>
+    <div class="footer-col"><h2>Connect</h2><a href="mailto:hopelab.science@gmail.com">hopelab.science@gmail.com</a><a href="./contact.html#research-capabilities">Research support</a><a href="https://sites.google.com/view/hope-lab" target="_blank" rel="noopener noreferrer">English Google Sites website ↗</a><a href="https://sites.google.com/view/hope-research" target="_blank" rel="noopener noreferrer">বাংলা ওয়েবসাইট ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Department+of+Biochemistry+and+Molecular+Biology%2C+University+of+Chittagong" target="_blank" rel="noopener noreferrer">University location ↗</a></div>
   </div>
   <div class="site-shell footer-bottom"><span>© <span id="current-year">2026</span> Laboratory for Health, Omics and Pathway Exploration (HOPE Lab)</span><span>University of Chittagong</span></div>
 </footer>

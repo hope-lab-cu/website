@@ -59,6 +59,38 @@
       display: table;
       margin-left: auto;
     }
+
+    /* Keep the image caption concise and on one line at all viewport widths. */
+    .hero-visual .visual-caption {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(3px, .8vw, 9px);
+      width: 100%;
+      box-sizing: border-box;
+      white-space: nowrap;
+      font-size: clamp(.48rem, 2.5vw, .74rem);
+      letter-spacing: .025em;
+    }
+    .hero-visual .visual-caption span,
+    .hero-visual .visual-caption i {
+      flex: 0 0 auto;
+    }
+
+    /* Give the PI's academic appointment a restrained visual distinction. */
+    .pi-copy .pi-role {
+      margin: .3rem 0 .8rem;
+      padding-left: 12px;
+      border-left: 2px solid #b8d9df;
+      color: #476b78;
+      font-size: .94rem;
+      font-weight: 600;
+      line-height: 1.55;
+    }
+    .pi-copy > p:not(.eyebrow):not(.pi-role) {
+      font-size: .97rem;
+    }
   </style>
 
   <meta property="og:site_name" content="HOPE Lab">
@@ -128,7 +160,7 @@
       <div class="hero-visual">
         <p class="hero-label home-lab-title">LABORATORY FOR HEALTH, OMICS AND PATHWAY EXPLORATION</p>
         <img src="./assets/images/home-science.png" alt="Scientific still life showing microbial research, a pipette and petri dish" fetchpriority="high">
-        <p class="visual-caption"><span>MICROBIAL BIOCHEMISTRY</span><i aria-hidden="true">•</i><span>MOLECULAR FUNCTION</span><i aria-hidden="true">•</i><span>ONE HEALTH</span><i aria-hidden="true">•</i><span>SUSTAINABLE BIOTECH</span></p>
+        <p class="visual-caption"><span>BIOCHEMISTRY</span><i aria-hidden="true">•</i><span>MICROBIOLOGY</span><i aria-hidden="true">•</i><span>ONE HEALTH</span></p>
       </div>
     </div>
     <div class="hero-copy">
@@ -179,7 +211,7 @@
     <div class="section-heading output-heading"><div><p class="eyebrow prominent-eyebrow">RESEARCH OUTPUT</p><h2>Publications and Contributions</h2></div></div>
     
     <div class="paper-stat-band"><div class="paper-stat-number">23</div><div class="paper-stat-copy"><h3>Peer-Reviewed Papers</h3><p>Explore 23 peer-reviewed papers, four preprints, and one accepted book chapter by HOPE Lab members across microbial biochemistry, probiotics, functional biomolecules, genomics, glycobiology, and environmental biotechnology.</p></div><a class="button button-secondary research-output-button" href="./publications.html">View research output <span aria-hidden="true">↗</span></a></div>
-    <div class="output-intro"><p class="section-subtitle">Selected research contributions from HOPE Lab members and collaborators.</p></div>
+    
     <div class="recent-publications"><div class="recent-kicker"><span>RECENT PUBLICATIONS</span><span>SELECTED / 2026</span></div><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Multifunctional lactic acid bacteria from sugarcane juice with probiotic properties for gut adaptation, health benefits, food preservation and quality enhancement</h3><p class="home-journal">Scientific Reports</p><p class="home-doi"><a href="https://doi.org/10.1038/s41598-026-40844-5" target="_blank" rel="noopener noreferrer">DOI: 10.1038/s41598-026-40844-5</a></p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Comparative evaluation of different sol–gel processed M-type barium hexaferrite on structural and antimicrobial efficacy</h3><p class="home-journal">Next Bioengineering</p><p class="home-doi"><a href="https://doi.org/10.1016/j.nxbio.2026.100047" target="_blank" rel="noopener noreferrer">DOI: 10.1016/j.nxbio.2026.100047</a></p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Functional and transcriptomic analyses in Neurospora crassa reveal a crucial role for the N-glycoprotein deglycosylation process in fungal homeostasis</h3><p class="home-journal">The FEBS Journal</p><p class="home-doi"><a href="https://doi.org/10.1111/febs.70666" target="_blank" rel="noopener noreferrer">DOI: 10.1111/febs.70666</a></p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article><article class="home-publication"><span class="home-pub-year">2026</span><div><h3>Prodigiosin as a Potential Multi-Target Antidiabetic Agent: Molecular Docking and Dynamics Simulations with Type 2 Diabetes-Related Proteins</h3><p class="home-journal">ChemistrySelect</p><p class="home-doi">Accepted</p></div><span class="pub-index-arrow" aria-hidden="true">↗</span></article></div>
     <div class="publications-more"><a class="subtle-link" href="./publications.html">Explore publications <span aria-hidden="true">↗</span></a></div>
   </div>

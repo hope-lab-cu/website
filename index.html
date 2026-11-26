@@ -10,7 +10,7 @@
   <link rel="icon" href="./assets/images/hope-lab-symbol.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <style>
     /* One Health introduction: text and diagram share a compact, responsive row. */
@@ -91,49 +91,30 @@
     .pi-copy > p:not(.eyebrow):not(.pi-role) {
       font-size: .97rem;
     }
+  
 
-    /* Present the full laboratory name as a considered typographic wordmark. */
-    .hero-visual .home-lab-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: .12rem;
-      margin: 0 auto 1rem;
-      color: #214b58;
-      text-align: center;
-      text-transform: none;
+    /* Refined visual treatment for the laboratory name above the homepage image. */
+    .hero-label.home-lab-title {
+      color: #245f6d;
+      font-size: clamp(.84rem, 1.08vw, .98rem);
+      font-weight: 800;
+      line-height: 1.45;
+      letter-spacing: .135em;
+      padding-bottom: 8px;
     }
-    .hero-visual .home-lab-kicker {
+    .hero-label.home-lab-title::after {
+      content: "";
       display: block;
-      color: #728f97;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: .59rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: .24em;
-    }
-    .hero-visual .home-lab-name {
-      display: block;
-      color: #214b58;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(1.65rem, 3.1vw, 2.25rem);
-      font-weight: 600;
-      line-height: .98;
-      letter-spacing: -.018em;
-      text-wrap: balance;
-    }
-    .hero-visual .home-lab-title::after {
-      content: '';
-      display: block;
-      width: 46px;
-      height: 1px;
-      margin-top: .48rem;
-      background: #b8cfd2;
+      width: 54px;
+      height: 2px;
+      margin-top: 8px;
+      background: linear-gradient(90deg, #287C92, #b8d9df);
+      border-radius: 2px;
     }
 
-    /* Add breathing room before the recent-publications label without inserting another line. */
+    /* Add a little breathing room above RECENT PUBLICATIONS without adding a line. */
     .recent-publications .recent-kicker {
-      margin-top: 1rem;
+      padding-top: 21px;
     }
   </style>
 
@@ -202,10 +183,7 @@
   <div class="site-shell hero-grid">
     <div class="hero-intro">
       <div class="hero-visual">
-        <p class="hero-label home-lab-title">
-          <span class="home-lab-kicker">LABORATORY FOR</span>
-          <span class="home-lab-name">Health, Omics and<br>Pathway Exploration</span>
-        </p>
+        <p class="hero-label home-lab-title">LABORATORY FOR HEALTH, OMICS AND PATHWAY EXPLORATION</p>
         <img src="./assets/images/home-science.png" alt="Scientific still life showing microbial research, a pipette and petri dish" fetchpriority="high">
         <p class="visual-caption"><span>BIOCHEMISTRY</span><i aria-hidden="true">•</i><span>MICROBIOLOGY</span><i aria-hidden="true">•</i><span>ONE HEALTH</span></p>
       </div>
